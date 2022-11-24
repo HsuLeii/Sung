@@ -1,0 +1,84 @@
+ /* input range 主體樣式 */
+ input[type="range"] {
+     -webkit-appearance: none;
+     position: relative;
+     border-radius: 10px;
+     cursor: pointer;
+     width: calc(100% - 10px);
+
+     /* input range 原點focus */
+     &:focus {
+         &::-webkit-slider-thumb {
+             background-color: darken($main_color, 10%);
+         }
+     }
+
+     /* input range 原點樣式 */
+     &::-webkit-slider-thumb {
+         width: 15px;
+         height: 15px;
+         border-radius: 100%;
+         border: none;
+         -webkit-appearance: none;
+         background-color: $main_color;
+         z-index: 1;
+         position: relative;
+         transition: 0.5s all ease;
+         transform: translate(0%, -50%);
+         top: 50%;
+     }
+
+     &:disabled {
+         cursor: auto;
+
+         /* input range 線條樣式 */
+         &::-webkit-slider-runnable-track {
+             background-color: $grey;
+         }
+
+         /* input range 原點樣式 */
+         &::-webkit-slider-thumb {
+             background-color: $grey;
+         }
+     }
+ }
+
+ /* input range 聲音樣式 */
+ input[name="soundRange"] {
+
+     &:hover {
+         ~.icon_hand_pointer {
+             opacity: 0;
+         }
+     }
+
+     &:before {
+         position: absolute;
+         content: "";
+         width: var(--soundRange);
+         height: 100%;
+         background-color: $white;
+         border-radius: 10px;
+         right: 0;
+         height: 5px;
+     }
+
+     /* input range 線條樣式 */
+     &::-webkit-slider-runnable-track {
+         background-color: $main_color;
+         height: 5px;
+         border-radius: 10px;
+     }
+ }
+
+
+
+ @media screen and (min-width: 576px) {}
+
+ @media screen and (min-width: 768px) {}
+
+ @media screen and (min-width: 992px) {}
+
+ @media screen and (min-width: 1200px) {}
+
+ @media screen and (min-width: 1400px) {}

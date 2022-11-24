@@ -1,0 +1,363 @@
+main {
+
+    .pick_level_area {
+        position: relative;
+        .pick_level_main {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+
+            .level_options {
+                width: 100%;
+                margin: 0px auto 20px;
+
+                &.level_land{
+                    .level_img {
+                        background: linear-gradient(135deg,
+                                $white 0% 5%, $main_color_green 5% 10%,
+                                $white 10% 15%, $main_color_green 15% 20%,
+                                $white 20% 25%, $main_color_green 25% 30%,
+                                $white 30% 35%, $main_color_green 35% 40%,
+                                $white 40% 45%, $main_color_green 45% 50%,
+                                $white 50% 55%, $main_color_green 55% 60%,
+                                $white 60% 65%, $main_color_green 65% 70%,
+                                $white 70% 75%, $main_color_green 75% 80%,
+                                $white 80% 85%, $main_color_green 85% 90%,
+                                $white 90% 95%, $main_color_green 95% 100%);
+                    }
+                    .level_name{
+                        color: $main_color_green_70;
+                    }
+                    .button_level {
+                        background-color: lighten($main_color_green, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_green, 10%);
+                        }
+                    }
+                }
+
+                &.level_ocean {
+                    .level_img {
+                        background: linear-gradient(135deg,
+                                $white 0% 5%, $main_color_blue 5% 10%,
+                                $white 10% 15%, $main_color_blue 15% 20%,
+                                $white 20% 25%, $main_color_blue 25% 30%,
+                                $white 30% 35%, $main_color_blue 35% 40%,
+                                $white 40% 45%, $main_color_blue 45% 50%,
+                                $white 50% 55%, $main_color_blue 55% 60%,
+                                $white 60% 65%, $main_color_blue 65% 70%,
+                                $white 70% 75%, $main_color_blue 75% 80%,
+                                $white 80% 85%, $main_color_blue 85% 90%,
+                                $white 90% 95%, $main_color_blue 95% 100%);
+                    }
+                    .level_name{
+                        color: $main_color_blue_70;
+                    }
+                    .button_level {
+                        background-color: lighten($main_color_blue, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_blue, 10%);
+                        }
+                    }
+                }
+
+                &.level_sky {
+                    .level_img {
+                        background: linear-gradient(135deg,
+                                $white 0% 5%, $main_color_red 5% 10%,
+                                $white 10% 15%, $main_color_red 15% 20%,
+                                $white 20% 25%, $main_color_red 25% 30%,
+                                $white 30% 35%, $main_color_red 35% 40%,
+                                $white 40% 45%, $main_color_red 45% 50%,
+                                $white 50% 55%, $main_color_red 55% 60%,
+                                $white 60% 65%, $main_color_red 65% 70%,
+                                $white 70% 75%, $main_color_red 75% 80%,
+                                $white 80% 85%, $main_color_red 85% 90%,
+                                $white 90% 95%, $main_color_red 95% 100%);
+                    }
+                    .level_name{
+                        color: $main_color_red_70;
+                    }
+                    .button_level {
+                        background-color: lighten($main_color_red, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_red, 10%);
+                        }
+                    }
+                }
+                .level_name{
+                    width: calc(100% - 10px);
+                    padding: 5px 20px;
+                    color: $main_color_black;
+                    margin: 5px;
+                }
+
+                .level_img {
+                    border-radius: 15px;
+                    position: relative;
+                    img {
+                        border-radius: 15px;
+                        padding: 5px;
+                    }
+                }
+
+                .button_level {
+                    padding: 5px 10px;
+                    background-color: $main_color;
+                    margin: 15px auto 0px;
+                    color: $white;
+                    border-radius: 50px;
+                    transform: scale(0.8);
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        color: $white;
+                        padding: 0px 30px;
+                    }
+
+                    &.button_finish{
+                        background-color: $main_color !important;
+                    }
+
+                    &.button_score{
+                        background-color: $main_color_yellow !important;
+
+                        a{
+                            color: $main_color_black;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: calc(90vh - 64.7px - 140px);
+            padding: 0px 10%;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: column;
+
+                    .level_img {
+                        border-radius: 10px;
+                        width: auto;
+                        height: auto;
+                        overflow: hidden;
+
+                        img {
+                            border-radius: 15px;
+                            padding: 5px;
+                            width: auto;
+                            height: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
+                    }
+
+                    .button_level {
+                        padding: 5px 10px;
+                        background-color: $main_color;
+                        margin: 20px auto;
+                        color: $white;
+                        border-radius: 50px;
+                        transform: scale(0.8);
+
+                        a {
+                            color: $white;
+                            padding: 5px 30px;
+                        }
+                    }
+
+                    &.level_land {
+                        .level_img {
+                            background: linear-gradient(135deg,
+                                    $white 0% 5%, $main_color_green 5% 10%,
+                                    $white 10% 15%, $main_color_green 15% 20%,
+                                    $white 20% 25%, $main_color_green 25% 30%,
+                                    $white 30% 35%, $main_color_green 35% 40%,
+                                    $white 40% 45%, $main_color_green 45% 50%,
+                                    $white 50% 55%, $main_color_green 55% 60%,
+                                    $white 60% 65%, $main_color_green 65% 70%,
+                                    $white 70% 75%, $main_color_green 75% 80%,
+                                    $white 80% 85%, $main_color_green 85% 90%,
+                                    $white 90% 95%, $main_color_green 95% 100%);
+                        }
+
+                        .button_level {
+                            background-color: $main_color_green;
+                        }
+
+                    }
+
+                    &.level_ocean {
+                        .level_img {
+                            background: linear-gradient(135deg,
+                                    $white 0% 5%, $main_color_blue 5% 10%,
+                                    $white 10% 15%, $main_color_blue 15% 20%,
+                                    $white 20% 25%, $main_color_blue 25% 30%,
+                                    $white 30% 35%, $main_color_blue 35% 40%,
+                                    $white 40% 45%, $main_color_blue 45% 50%,
+                                    $white 50% 55%, $main_color_blue 55% 60%,
+                                    $white 60% 65%, $main_color_blue 65% 70%,
+                                    $white 70% 75%, $main_color_blue 75% 80%,
+                                    $white 80% 85%, $main_color_blue 85% 90%,
+                                    $white 90% 95%, $main_color_blue 95% 100%);
+                        }
+
+                        .button_level {
+                            background-color: $main_color_blue;
+                        }
+
+                    }
+
+                    &.level_sky {
+                        .level_img {
+                            background: linear-gradient(135deg,
+                                    $white 0% 5%, $main_color_red 5% 10%,
+                                    $white 10% 15%, $main_color_red 15% 20%,
+                                    $white 20% 25%, $main_color_red 25% 30%,
+                                    $white 30% 35%, $main_color_red 35% 40%,
+                                    $white 40% 45%, $main_color_red 45% 50%,
+                                    $white 50% 55%, $main_color_red 55% 60%,
+                                    $white 60% 65%, $main_color_red 65% 70%,
+                                    $white 70% 75%, $main_color_red 75% 80%,
+                                    $white 80% 85%, $main_color_red 85% 90%,
+                                    $white 90% 95%, $main_color_red 95% 100%);
+                        }
+
+                        .button_level {
+                            background-color: $main_color_red;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .swiper-pagination {
+            right: 5%;
+            top: 0;
+            transform: translate3d(50%, 100%, 0);
+
+            .swiper-pagination-bullet {
+                background: $main_color;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: $main_color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        .pick_level_area {
+            .swiper {
+                height: calc(90vh - 77.05px - 150px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+
+        .pick_level_area {
+            
+            .pick_level_main {
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 90%;
+    
+                .level_options {
+                    width: 45%;
+                    margin: 0px 2.5% 45px;
+
+                    .level_img {
+                        border-radius: 20px;
+                        img {
+                            border-radius: 20px;
+                            padding: 10px;
+                        }
+                        .level_name{
+                            width: calc(100% - 20px);
+                            left: 10px;
+                            bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .swiper {
+                width: 80%;
+                padding: 0px 5%;
+                height: calc(90vh - 77.05px - 160px);
+
+                .swiper-wrapper {
+                    .swiper-slide {
+                        justify-content: center;
+
+                        .level_img {
+                            img {
+                                border-radius: 20px;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination {
+                right: 2.5%;
+                top: 50%;
+                transform: translate3d(50%, -50%, 0);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        
+        .pick_level_area {
+            
+            .swiper {
+                height: calc(90vh - 89.81px - 200px);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .pick_level_area {
+
+            .pick_level_main {
+
+                margin: 40px auto;
+    
+                .level_options {
+                    width: 28%;
+                    margin: 0px 2.5% 20px;
+
+                    .button_level{
+                        margin: 20px auto 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {}

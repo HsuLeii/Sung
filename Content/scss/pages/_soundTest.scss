@@ -1,0 +1,335 @@
+main {
+    .sound_test_area {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin: 30px auto;
+        padding: 20px 5%;
+        background-color: $white_50;
+        border-radius: 10px;
+
+        .sound_test_text {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sound_bar_area {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            margin: 25px auto 0px;
+
+            &.play_animation {
+                .bar {
+                    animation: sound 0ms -800ms linear infinite alternate;
+                }
+            }
+
+            .bar {
+                background-color: $main-color;
+                height: 0px;
+                width: 3px;
+                margin: 0px 1px;
+
+                &:nth-child(1) {
+                    animation-duration: 474ms;
+                }
+
+                &:nth-child(2) {
+                    animation-duration: 433ms;
+                }
+
+                &:nth-child(3) {
+                    animation-duration: 407ms;
+                }
+
+                &:nth-child(4) {
+                    animation-duration: 458ms;
+                }
+
+                &:nth-child(5) {
+                    animation-duration: 400ms;
+                }
+
+                &:nth-child(6) {
+                    animation-duration: 427ms;
+                }
+
+                &:nth-child(7) {
+                    animation-duration: 441ms;
+                }
+
+                &:nth-child(8) {
+                    animation-duration: 419ms;
+                }
+
+                &:nth-child(9) {
+                    animation-duration: 487ms;
+                }
+
+                &:nth-child(10) {
+                    animation-duration: 442ms;
+                }
+            }
+        }
+
+        .sound_button_area{
+            .sound_area{
+                &.finger_btn{
+                    .finger_icon{
+                        color: $main-color !important;
+                    }
+                }
+            } 
+        }
+
+    }
+
+    .sound_button_area,
+    .recording_button_area,
+    .stop_button_area,
+    .play_button_area {
+        margin: 40px auto 0px;
+
+        .sound_area,
+        .recording_area,
+        .stop_area,
+        .play_area {
+            background-color: $main-color;
+            display: block;
+            margin: 0 auto;
+
+            i {
+                font-size: 40px;
+                color: $white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+
+
+        .button_text {
+            text-align: center;
+            margin: 5px auto 0px;
+            padding: 0px 10px;
+            border-radius: 10px;
+            width: 100%;
+            cursor: pointer;
+            &:disabled {
+                background-color: transparent !important;
+                border: 1px solid transparent !important;
+
+                p{
+                    color: $grey;
+                }
+            }
+        }
+
+        .recording_seconds {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .recording_area,
+        .stop_area,
+        .play_area {
+            width: 60px;
+        }
+    }
+
+    .recording_button_area {
+
+        .recording_area {
+            background-color: $main_color_blue;
+
+            &.finger_btn {
+                .finger_icon {
+                        color: $main_color_blue !important;
+                }
+            }
+        }
+
+        .recording_button_animate {
+            animation: recording 1500ms infinite;
+        }
+
+        .button_text {
+            p {
+                color: $main_color_blue;
+            }
+        }
+
+    }
+
+    .stop_button_area {
+
+        .stop_area {
+            background-color: $main_color_red;
+        }
+
+        .button_text {
+            p {
+                color: $main_color_red;
+            }
+        }
+
+    }
+
+    .play_button_area {
+
+        .play_area {
+            background-color: $main_color_green;
+        }
+
+        .recording_button_animate {
+            animation: recording 1500ms infinite;
+        }
+
+        .button_text {
+            p {
+                color: $main_color_green;
+            }
+        }
+
+    }
+
+    .sound_button_area {
+
+        .sound_area {
+
+            &.finger_btn {
+                .finger_icon {
+                        color: $main_color_yellow !important;
+                }
+            }
+        }
+
+        .recording_button_animate {
+            animation: recording 1500ms infinite;
+        }
+
+        .button_text {
+            p {
+                color: $main_color_yellow;
+            }
+        }
+
+    }
+
+    .sound_test_img {
+        margin: 40px auto 0px;
+        width: 40%;
+        max-width: 200px;
+    }
+
+    .recording_stop_play_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px auto 0px;
+
+        .recording_button_item {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 10px 15px;
+
+            .recording_button_instructions {
+                width: 100%;
+                text-align: center;
+            }
+
+            .sound_button_area,
+            .recording_button_area,
+            .stop_button_area,
+            .play_button_area {
+                margin: 20px 10px 0px;
+            }
+
+            .sound_button_area{
+                .sound_area{
+                    background-color: $main_color_yellow;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    main {
+
+        .sound_button_area,
+        .recording_button_area,
+        .stop_button_area,
+        .play_button_area {
+
+            .sound_area,
+            .recording_area,
+            .stop_area,
+            .play_area {
+
+                i {
+                    font-size: 50px;
+                }
+
+            }
+
+            .recording_area,
+            .stop_area,
+            .play_area {
+                width: 70px;
+            }
+        }
+
+        .recording_stop_play_area {
+            flex-direction: row;
+            align-items: flex-start;
+
+            .recording_button_item {
+                margin: 0 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+
+        .sound_button_area,
+        .recording_button_area,
+        .stop_button_area,
+        .play_button_area {
+
+            .sound_area,
+            .recording_area,
+            .stop_area,
+            .play_area {
+
+                i {
+                    font-size: 60px;
+                }
+
+            }
+
+            .recording_area,
+            .stop_area,
+            .play_area {
+                width: 80px;
+            }
+        }
+
+        .recording_stop_play_area {
+            .recording_button_item {
+                margin: 0 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

@@ -1,0 +1,298 @@
+main {
+
+    .button-animate {
+        animation: btnVariety 2s infinite ease-in-out;
+    }
+
+    .page_title {
+        padding: 10px 30px;
+        border-radius: 50px;
+        width: 80%;
+        max-width: 450px;
+        margin: 20px auto 0px;
+
+        h4 {
+            color: $white;
+            word-break: keep-all;
+        }
+
+        h3 {
+            color: $main_color;
+        }
+    }
+
+    .pick_level_top {
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto;
+        width: 100%;
+
+        .avatar_area {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+
+            .avatar_img {
+                width: 8%;
+                margin: 0px 1%;
+
+                &:hover {
+                    &~.avatar_explain {
+                        display: block;
+                    }
+                }
+            }
+
+            .avatar_explain {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 15px);
+                width: 85%;
+                background-color: $white;
+                border-radius: 10px;
+                border: 1px solid $main_color;
+                padding: 5px 12px;
+                display: none;
+                z-index: 1;
+
+                p {
+                    color: $main_color;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: "";
+                }
+
+                &:before {
+                    border-width: 0px 8px 8px 8px;
+                    top: -8px;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 8px solid $main_color;
+                    left: 5%;
+
+                }
+
+                &:after {
+                    border-width: 0px 7px 7px 7px;
+                    top: -7px;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid $white;
+                    left: calc(5% + 1px);
+
+                }
+            }
+        }
+
+        .pick_level_title {
+
+            p {
+                color: $main_color;
+            }
+        }
+
+        .page_logo {
+            display: none;
+        }
+    }
+
+    .leave_next_btn {
+        margin: 30px auto;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            padding: 5px 0px;
+            background-color: $white;
+            border: 1px solid $main-color;
+
+            a {
+                color: $main-color;
+                padding: 10px 15px;
+            }
+
+            &:hover {
+                background-color: $main_color;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        &.go_btn_area {
+            .go_btn {
+                &.button_glow {
+                    animation: glowing 1500ms infinite;
+                }
+            }
+        }
+    }
+
+    .finger_btn {
+        position: relative;
+
+        .finger_icon {
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translate(0%, -50%);
+            animation: fingers 1000ms infinite;
+            color: $main-color;
+            font-size: 30px !important;
+            padding: 0px 5px 0px 0px !important;
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    main {
+
+        .pick_level_top {
+
+            .avatar_area {
+                width: 60%;
+            }
+
+            .page_logo {
+                display: block;
+                width: calc(100% - 550px);
+                max-width: 280px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .leave_next_btn {
+            margin: 50px auto;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {
+    main {
+
+        .pick_level_top {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            .page_title {
+                margin: 0px auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .avatar_area {
+                margin: 0px 5px;
+                order: 2;
+                max-width: 250px;
+                position: absolute;
+                top: 0;
+                right: 5px;
+
+                .avatar_img {
+                    width: calc(20% - 10px);
+                    margin: 7px 5px;
+                }
+
+                &.pick_level_avatar_area {
+                    position: relative;
+                    margin: 5px 5px 5px auto;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1400px) {}
+
+@keyframes btnVariety {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+@keyframes recording {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .55;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes sound {
+    0% {
+        opacity: .55;
+        height: 3px;
+    }
+
+    100% {
+        opacity: 1;
+        height: 60px;
+    }
+}
+
+@keyframes fingers {
+    0% {
+        transform: translate(-100%, -50%);
+    }
+
+    50% {
+        transform: translate(calc(-100% - 10px), -50%);
+    }
+
+    100% {
+        transform: translate(-100%, -50%);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px $glow_color;
+    }
+
+    40% {
+        box-shadow: 0 0 20px $glow_color;
+    }
+
+    60% {
+        box-shadow: 0 0 20px $glow_color;
+    }
+
+    100% {
+        box-shadow: 0 0 0px $glow_color;
+    }
+}

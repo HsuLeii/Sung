@@ -1,0 +1,294 @@
+main {
+    .test_area {
+
+        &.sky_test_area {
+
+            .QA_area {
+                .test_progress{
+                    display: flex;
+                    align-items: center;
+
+                    .drag_line{
+                        width: calc(100% - 85px);
+                    }
+
+                    .quiz_progress{
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        margin: 0 0 0 15px;
+                        .quiz_progress_value{
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            -webkit-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                        }
+
+                        svg{
+                            position: absolute;
+                            width: 100%;
+                            z-index: 1;
+                            left: 50%;
+                            top: 50%;
+                            -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+                            transform: translate(-50%, -50%) rotate(-90deg);
+                            overflow: initial;
+
+                            .quiz_progress_background {
+                                fill: none;
+                                stroke: $white;
+                                stroke-width: 3px;
+                            }
+
+                            .quiz_progress_bar {
+                                fill: none;
+                                stroke: $main-color;
+                                stroke-dasharray: 100 100;
+                                stroke-dashoffset: 100;
+                                stroke-dashoffset: 0px;
+                                stroke-linecap: round;
+                                stroke-width: 3px;
+                                -webkit-transition: stroke-dashoffset 1s ease-in-out;
+                                transition: stroke-dashoffset 1s ease-in-out;
+                            }
+                        }
+                    }
+                }
+                .topic_area {
+                    .recording_stop_play_area {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .recording_button_item{
+                            margin: 10px 0px;
+
+                            &.sky_topic{
+                                .recording_button_instructions{
+                                    margin: 0 0 15px;
+                                }
+                                .sky_topic_item{
+                                    margin: 15px 5px 0px 5px;
+                                    background-color: $white;
+                                    .topic_item_content{
+                                        padding: 10px 5px;
+                                        border: 2px solid $main-color;
+                                        font-size: 30px;
+                                        color: $main-color;
+                                        line-height: 1;
+
+                                        &.alphabet{
+                                            width: calc(30px * 1 + 20px);
+                                            text-align: center;
+                                        }
+
+                                        &.single_word{
+                                            font-size: 17px;
+                                        }
+                                        
+                                    }
+                                    &.topic_item_sentence{
+                                        width: 100%;
+                                        margin: -2px 5px 0px 5px;
+                                        .topic_item_content{
+                                            &.sentence{
+                                                font-size: 17px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .recording_playback_area{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            margin: 10px 15px;
+                            .recording_button_item{
+                                margin: 10px 0px;
+                                width: 100%;
+                                padding: 0px 5px 10px;
+                                border-bottom: 1px dotted $white;
+                                &:nth-last-child(1){
+                                    border-bottom: 0px;
+                                }
+                            }
+                            .recording_title_area{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .test_progress{
+    
+                        .drag_line{
+                            width: calc(100% - 125px);
+                        }
+    
+                        .quiz_progress{
+                            width: 100px;
+                            height: 100px;
+                            margin: 0 0 0 25px;
+                        }
+                    }
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+    
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        .topic_item_content{
+                                            font-size: 40px;
+
+                                            &.alphabet{
+                                                width: calc(40px * 1 + 20px);
+                                            }
+
+                                            &.single_word{
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+    
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        .topic_item_content{
+                                            font-size: 50px;
+
+                                            &.alphabet{
+                                                width: calc(50px * 1 + 20px);
+                                            }
+
+                                            &.single_word{
+                                                font-size: 20px;
+                                            }
+                                        }
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }      
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        .topic_item_content{
+                                            &.single_word{
+                                                font-size: 30px;
+                                            }
+                                        }
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 23px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (orientation:portrait) {
+}
+
+@media all and (orientation:landscape) {
+}
