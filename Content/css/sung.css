@@ -632,7 +632,6 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu {
   transition: all 0.5s cubic-bezier(0.43, 0.05, 0.17, 1);
   position: relative;
   width: 100%;
-  right: 0;
   border-radius: 5px;
   opacity: 1;
   visibility: visible;
@@ -755,7 +754,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
     background-color: transparent;
     height: auto;
     padding: 0;
-    overflow: auto;
+    overflow: initial;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item {
     border-bottom: 0px;
@@ -766,6 +765,13 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-toggle.show {
     border-bottom: 2px solid #007ECA;
+  }
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu {
+    position: absolute;
+    width: 250px;
+    background-color: #fff;
+    left: auto;
+    right: 0;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.show ~ .dropdownBg {
     opacity: 1;
