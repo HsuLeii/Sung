@@ -24,9 +24,19 @@ header {
                     width: 35px;
                     height: 4px;
                     background-color: $main_color;
-                    display: none;
                     transform-origin: center;
                     transition: all .2s 0s ease;
+                    
+                    &:nth-child(1){
+                        transform: translate(0, -5px);
+                    }
+                    &:nth-last-child(1){
+                        transform: translate(0, 5px);
+                    }
+                }
+                &.open{
+                        .navbar-toggler-icon{
+                            display: none;
                     
                     &:nth-child(1){
                         display: block;
@@ -35,17 +45,6 @@ header {
                     &:nth-last-child(1){
                         display: block;
                         transform: translate(0, -2px) rotate(-135deg);
-                    }
-                }
-                &.collapsed{
-                        .navbar-toggler-icon{
-                            display: block;
-                    
-                    &:nth-child(1){
-                        transform: translate(0, -5px);
-                    }
-                    &:nth-last-child(1){
-                        transform: translate(0, 5px);
                     }
                 }
                 }

@@ -263,31 +263,30 @@ header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
   width: 35px;
   height: 4px;
   background-color: #007ECA;
-  display: none;
   transform-origin: center;
   transition: all .2s 0s ease;
 }
 
 header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon:nth-child(1) {
+  transform: translate(0, -5px);
+}
+
+header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon:nth-last-child(1) {
+  transform: translate(0, 5px);
+}
+
+header .navbar .container-fluid .navbar-toggler.open .navbar-toggler-icon {
+  display: none;
+}
+
+header .navbar .container-fluid .navbar-toggler.open .navbar-toggler-icon:nth-child(1) {
   display: block;
   transform: translate(0, 2px) rotate(135deg);
 }
 
-header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon:nth-last-child(1) {
+header .navbar .container-fluid .navbar-toggler.open .navbar-toggler-icon:nth-last-child(1) {
   display: block;
   transform: translate(0, -2px) rotate(-135deg);
-}
-
-header .navbar .container-fluid .navbar-toggler.collapsed .navbar-toggler-icon {
-  display: block;
-}
-
-header .navbar .container-fluid .navbar-toggler.collapsed .navbar-toggler-icon:nth-child(1) {
-  transform: translate(0, -5px);
-}
-
-header .navbar .container-fluid .navbar-toggler.collapsed .navbar-toggler-icon:nth-last-child(1) {
-  transform: translate(0, 5px);
 }
 
 header .navbar .container-fluid .navbar-collapse {
@@ -553,19 +552,23 @@ main .title_name {
   margin: 40px auto;
 }
 
-main .title_name .name_area .chinese_name h3 {
+main .title_name .name_area .name h3 {
   color: #007ECA;
-  font-size: 50px;
+  font-size: 35px;
 }
 
-main .title_name .name_area .english_name h3 {
-  font-size: 30px;
-  margin: 0 0 0 80px;
+main .title_name .name_area .name h3 span {
+  font-size: 21px;
+}
+
+main .title_name .name_area .ntnu_name h3 {
+  margin: 10px 0 0 35px;
 }
 
 main .title_name .photo_area {
-  margin: 40px auto 0;
+  margin: 40px 0 0 auto;
   position: relative;
+  max-width: 450px;
 }
 
 main .title_name .photo_area::before {
@@ -582,5 +585,42 @@ main .title_name .photo_area::before {
 
 main .title_name .photo_area .photo_area_img {
   border-radius: 50% 0% 50% 50%;
+}
+
+@media screen and (min-width: 992px) {
+  main .title_name {
+    flex-direction: row;
+    align-items: center;
+  }
+  main .title_name .name_area {
+    width: 45%;
+  }
+  main .title_name .name_area .name h3 {
+    color: #007ECA;
+    font-size: 35px;
+  }
+  main .title_name .name_area .name h3 span {
+    font-size: 21px;
+  }
+  main .title_name .name_area .ntnu_name h3 {
+    margin: 10px 0 0 35px;
+  }
+  main .title_name .photo_area {
+    width: 50%;
+  }
+  main .title_name .photo_area::before {
+    content: "";
+    position: absolute;
+    border: 2px solid #007ECA;
+    left: 0;
+    top: 0;
+    transform: translate(-10px, -10px);
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 0% 50% 50%;
+  }
+  main .title_name .photo_area .photo_area_img {
+    border-radius: 50% 0% 50% 50%;
+  }
 }
 /*# sourceMappingURL=sung.css.map */
