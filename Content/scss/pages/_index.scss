@@ -1,0 +1,57 @@
+main{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    .title_name{
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        .name_area{
+            .chinese_name{
+                h3{
+                    color: $main_color;
+                    font-size: 50px;
+                }
+            }
+            .english_name{
+                h3{
+                    font-size: 30px;
+                    margin: 0 0 0 80px;
+                }
+            }
+        }
+        .photo_area{
+            margin: 40px auto 0;
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                border: 2px solid $main_color;
+                left: 0;
+                top: 0;
+                transform: translate(-10px , -10px);
+                width: 100%;
+                height: 100%;
+                border-radius: 50% 0% 50% 50%;
+            }
+
+            .photo_area_img{
+                border-radius: 50% 0% 50% 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

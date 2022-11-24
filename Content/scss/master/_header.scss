@@ -2,40 +2,83 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: $white;
 
     .navbar {
         width: 100%;
+        padding: 0;
 
         .container-fluid {
             justify-content: space-between;
 
+            .navbar-toggler{
+                display: flex;
+                flex-direction: column;
+                border: 0px;
+                .navbar-toggler-icon{
+                    background-image: none;
+                    width: 35px;
+                    height: 4px;
+                    background-color: $main_color;
+                    display: none;
+                    transform-origin: center;
+                    transition: all .2s 0s ease;
+                    
+                    &:nth-child(1){
+                        display: block;
+                        transform: translate(0, 2px) rotate(135deg);
+                    }
+                    &:nth-last-child(1){
+                        display: block;
+                        transform: translate(0, -2px) rotate(-135deg);
+                    }
+                }
+                &.collapsed{
+                        .navbar-toggler-icon{
+                            display: block;
+                    
+                    &:nth-child(1){
+                        transform: translate(0, -5px);
+                    }
+                    &:nth-last-child(1){
+                        transform: translate(0, 5px);
+                    }
+                }
+                }
+            }
             .navbar-collapse {
                 flex-grow: initial;
-                background: $white;
+                background-color: $white;
                 width: 100%;
                 position: absolute;
                 left: 0;
-                top: 75px;
-                height: calc(100vh - 75px);
-                padding: 5px 20px;
-                overflow-y: scroll;
+                top: 55px;
 
-                &::-webkit-scrollbar {
-                    width: 4px;
-                }
+                .navbar-nav {
+                    padding: 5px 20px;
+                    height: calc(100vh - 55px);
+                    overflow-y: scroll;
 
-                &::-webkit-scrollbar-thumb {
-                    background: $main_color;
-                    border: none;
-                    border-radius: 0;
-                }
+                    &::-webkit-scrollbar {
+                        width: 4px;
+                    }
 
-                &::-webkit-scrollbar-track {
-                    background: lighten($main_color, 10%);
-                    opacity: .2;
-                    border: none;
-                    border-radius: 0;
+                    &::-webkit-scrollbar-thumb {
+                        background: $main_color;
+                        border: none;
+                        border-radius: 0;
+                    }
+
+                    &::-webkit-scrollbar-track {
+                        background: lighten($main_color, 10%);
+                        opacity: .2;
+                        border: none;
+                        border-radius: 0;
+                    }
                 }
 
                 .nav-item {
@@ -80,6 +123,7 @@ header {
                         background-color: transparent;
                         padding: 10px 20px;
                         border: 0px;
+                        top: auto;
 
                         li {
                             .dropdown-item {
@@ -208,11 +252,16 @@ header {
 
 @media screen and (min-width: 992px) {
     header {
-        padding: 0px 5%;
+        padding: 0px 2.5%;
+        background-color: transparent;
 
         .navbar {
 
             .container-fluid {
+
+                .navbar-toggler{
+                    display: none;
+                }
 
                 .navbar-collapse {
                     position: initial;
@@ -220,14 +269,20 @@ header {
                     background-color: transparent;
                     height: auto;
                     padding: 0;
-                    overflow: initial;
+
+                    .navbar-nav {
+                        padding: 0;
+                        height: auto;
+                        overflow: initial;
+                    }
 
                     .nav-item {
-                        border-bottom:0px;
+                        border-bottom: 0px;
 
                         .dropdown-toggle {
                             padding: 0 30px 0 10px;
                             margin: 20px;
+
                             &.show {
                                 border-bottom: 2px solid $main_color;
                             }
