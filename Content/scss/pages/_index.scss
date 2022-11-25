@@ -73,26 +73,41 @@ main{
 
         .about_area_item{
             .about_area_title{
-                margin: 0 0 10px 0;
+                margin: 0 0 40px 0;
                 border-bottom: 1px solid $black;
-                padding: 0 0 10px 0;
+                padding: 0 0 20px 0;
             }
     
             .about_area_content{
-                .about_area_content_title{
-                    margin: 0 0 5px 0;
-                    h5{
-                        padding: 7px 15px;
-                        background-color: $main_color_yellow;
-                        display: inline-block;
+                background-color: $white;
+                box-shadow: 2px 9px 46px 0px $box_shadow_color;
+                padding: 0px 40px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .about_index{
+                    padding: 20px 0px;
+
+                    h3{
+                        font-size: 60px;
+                    }
+
+                }
+                .about_body{
+                    border-top: $grey solid 1px;
+                    padding: 20px 0px;
+
+                    .about_area_content_title{
+                        margin: 0 0 10px 0;
+                    }
+                    
+                    p{
+                        span{
+                            color: $main_color;
+                        }
                     }
                 }
                 
-                p{
-                    span{
-                        color: $main_color;
-                    }
-                }
             }
         }
 
@@ -136,6 +151,19 @@ main{
                 width: 50%;
                 max-width: 340px;
             }
+        }
+
+        .about_area{
+            margin: 20px auto;
+    
+            .about_area_item{
+        
+                .about_area_content{
+                    width: 45%;
+                }
+            }
+    
+            
         }
     }
 }
