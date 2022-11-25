@@ -53,7 +53,7 @@ main{
             }
 
             &::before{
-                border-color: $white;
+                border-color: $main_color_yellow;
                 transform: translate(-10px , -10px);
             }
 
@@ -67,6 +67,31 @@ main{
                 border-radius: 50% 0% 0% 0%;
             }
         }
+    }
+    .about_area{
+        margin: 20px auto;
+
+        .about_area_item{
+            .about_area_title{
+                margin: 0 0 10px 0;
+                border-bottom: 1px solid $black;
+                padding: 0 0 10px 0;
+            }
+    
+            .about_area_content{
+                h4{
+                    margin: 0 0 5px 0;
+                    color: $main_color;
+                }
+                p{
+                    span{
+                        color: $main_color;
+                    }
+                }
+            }
+        }
+
+        
     }
 }
 

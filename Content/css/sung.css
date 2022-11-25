@@ -598,7 +598,7 @@ main .title_name .photo_area::before, main .title_name .photo_area::after {
 }
 
 main .title_name .photo_area::before {
-  border-color: #fff;
+  border-color: #ffe503;
   transform: translate(-10px, -10px);
 }
 
@@ -610,6 +610,25 @@ main .title_name .photo_area::after {
 
 main .title_name .photo_area .photo_area_img {
   border-radius: 50% 0% 0% 0%;
+}
+
+main .about_area {
+  margin: 20px auto;
+}
+
+main .about_area .about_area_item .about_area_title {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #2f2f2f;
+  padding: 0 0 10px 0;
+}
+
+main .about_area .about_area_item .about_area_content h4 {
+  margin: 0 0 5px 0;
+  color: #007ECA;
+}
+
+main .about_area .about_area_item .about_area_content p span {
+  color: #007ECA;
 }
 
 @media screen and (min-width: 768px) {
