@@ -73,42 +73,50 @@ main{
 
         .about_area_item{
             .about_area_title{
-                margin: 0 0 40px 0;
+                margin: 0 0 20px 0;
                 border-bottom: 1px solid $black;
                 padding: 0 0 20px 0;
             }
     
             .about_area_content{
-                background-color: $white;
-                box-shadow: 2px 9px 46px 0px $box_shadow_color;
-                padding: 0px 40px;
                 display: flex;
-                align-items: center;
-                flex-direction: column;
-                .about_index{
-                    padding: 20px 0px;
-
-                    h3{
-                        font-size: 60px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .about_area_content_item{
+                    background-color: $white;
+                    box-shadow: 2px 9px 46px 0px $box_shadow_color;
+                    padding: 0px 40px;
+                    margin: 10px auto 10px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    .about_index{
+                        padding: 20px 0px;
+    
+                        h3{
+                            font-size: 60px;
+                        }
+    
                     }
-
-                }
-                .about_body{
-                    border-top: $grey solid 1px;
-                    padding: 20px 0px;
-
-                    .about_area_content_title{
-                        margin: 0 0 10px 0;
-                    }
-                    
-                    p{
-                        span{
-                            color: $main_color;
+                    .about_body{
+                        border-top: $grey solid 1px;
+                        padding: 20px 0px;
+    
+                        .about_area_content_title{
+                            margin: 0 0 10px 0;
+                        }
+                        
+                        p{
+                            span{
+                                color: $main_color;
+                            }
                         }
                     }
+                    
                 }
-                
             }
+            
         }
 
         
@@ -159,7 +167,9 @@ main{
             .about_area_item{
         
                 .about_area_content{
-                    width: 45%;
+                    .about_area_content_item{
+                        width: 45%;
+                    }
                 }
             }
     
