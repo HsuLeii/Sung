@@ -8,59 +8,13 @@ main{
         flex-direction: column;
         margin: 40px auto;
         .name_area{
-            .name{
-                h3{
-                    color: $main_color;
-                    font-size: 35px;
+            .name_area_content{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: baseline;
 
-                    span{
-                        font-size: 21px;
-                    }
-                }
-            }
-            .ntnu_name{
-                h3{
-                    margin: 10px 0 0 35px;
-                }
-            }
-        }
-        .photo_area{
-            margin: 40px 0 0 auto;
-            position: relative;
-            max-width: 450px;
-
-            &::before{
-                content: "";
-                position: absolute;
-                border: 2px solid $main_color;
-                left: 0;
-                top: 0;
-                transform: translate(-10px , -10px);
-                width: 100%;
-                height: 100%;
-                border-radius: 50% 0% 50% 50%;
-            }
-
-            .photo_area_img{
-                border-radius: 50% 0% 50% 50%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 576px) {
-}
-
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 992px) {
-    main{
-        .title_name{
-            flex-direction: row;
-            align-items: center;
-            .name_area{
-                width: 45%;
-                .name{
+                .chinese_name{
+                    margin: 0 10px 0 0;
                     h3{
                         color: $main_color;
                         font-size: 35px;
@@ -70,35 +24,146 @@ main{
                         }
                     }
                 }
-                .ntnu_name{
-                    h3{
-                        margin: 10px 0 0 35px;
-                    }
+                .english_name{
+                        span{
+                            font-size: 21px;
+                            color: $main_color;
+                        }
                 }
             }
-            .photo_area{
-                width: 50%;
-    
-                &::before{
-                    content: "";
-                    position: absolute;
-                    border: 2px solid $main_color;
-                    left: 0;
-                    top: 0;
-                    transform: translate(-10px , -10px);
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50% 0% 50% 50%;
-                }
-    
-                .photo_area_img{
-                    border-radius: 50% 0% 50% 50%;
-                }
+            .ntnu_name{
+                margin: 10px 0 0 35px;
+            }
+        }
+        .photo_area{
+            margin: 35px 0 0 auto;
+            position: relative;
+            max-width: 450px;
+
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                border: 2px solid;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50% 0% 0% 0%;
+            }
+
+            &::before{
+                border-color: $white;
+                transform: translate(-10px , -10px);
+            }
+
+            &::after{
+                border-color: $main_color;
+                z-index: -1;
+                transform: translate(10px , 10px);
+            }
+
+            .photo_area_img{
+                border-radius: 50% 0% 0% 0%;
             }
         }
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        .title_name{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin: 60px auto;
+
+            .name_area{
+                width: 50%;
+                max-width: calc(100% - 350px);
+                .name_area_content{
+                    .chinese_name{
+                        h3{
+                            font-size: 45px;
+                        }
+                    }
+                    .english_name{
+                            span{
+                                font-size: 24px;
+                            }
+                    }
+                }
+                .ntnu_name{
+                    margin: 10px 0 0 25px;
+                }
+            }
+
+            .photo_area{
+                margin: 0;
+                width: 50%;
+                max-width: 340px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main{
+        .title_name{
+            margin: 80px auto;
+            .name_area{
+                max-width: calc(100% - 450px);
+                .name_area_content{
+                    .chinese_name{
+                        h3{
+                            font-size: 65px;
+                        }
+                    }
+                    .english_name{
+                            span{
+                                font-size: 30px;
+                            }
+                    }
+                }
+            }
+            .photo_area{
+                max-width: 450px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main{
+        .title_name{
+            margin: 100px auto;
+            justify-content: center;
+            .name_area{
+                max-width: calc(100% - 450px);
+                .name_area_content{
+                    .chinese_name{
+                        h3{
+                            font-size: 65px;
+                        }
+                    }
+                    .english_name{
+                            span{
+                                font-size: 30px;
+                            }
+                    }
+                }
+                .ntnu_name{
+                    margin: 10px 0 0 65px;
+                }
+            }
+            .photo_area{
+                max-width: 550px;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1400px) {}

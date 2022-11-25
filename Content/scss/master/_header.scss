@@ -129,6 +129,7 @@ header {
                                 position: relative;
                                 color: $black;
                                 padding: 10px 0px;
+                                font-weight: bold;
 
                                 &:before {
                                     position: absolute;
@@ -159,7 +160,6 @@ header {
                                     padding: 10px 0 10px 35px;
                                     transition: .2s ease-in-out;
                                     background-color: transparent;
-                                    font-weight: bold;
                                     color: $main_color;
 
                                     &:before {
