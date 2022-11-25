@@ -52,6 +52,11 @@ h4 {
   line-height: 1.5;
 }
 
+h5 {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 p {
   font-size: 14px;
   line-height: 1.7;
@@ -133,6 +138,11 @@ body {
   text-align: center;
 }
 
+::selection {
+  background: #ffe503;
+  color: #007ECA;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 32px;
@@ -142,6 +152,9 @@ body {
   }
   h4 {
     font-size: 21px;
+  }
+  h5 {
+    font-size: 17px;
   }
   p {
     font-size: 15px;
@@ -170,6 +183,9 @@ body {
   h4 {
     font-size: 23px;
   }
+  h5 {
+    font-size: 19px;
+  }
   p {
     font-size: 17px;
   }
@@ -188,6 +204,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  h5 {
+    font-size: 21px;
+  }
   p {
     font-size: 19px;
   }
@@ -214,6 +233,9 @@ body {
   }
   h4 {
     font-size: 27px;
+  }
+  h5 {
+    font-size: 22px;
   }
   p {
     font-size: 20px;
@@ -459,7 +481,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
   left: 0;
   top: 0;
   background: #33333326;
-  visibility: visible;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -508,6 +530,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.show ~ .dropdownBg {
     opacity: 1;
+    visibility: visible;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
     flex-direction: row;
@@ -622,9 +645,14 @@ main .about_area .about_area_item .about_area_title {
   padding: 0 0 10px 0;
 }
 
-main .about_area .about_area_item .about_area_content h4 {
+main .about_area .about_area_item .about_area_content .about_area_content_title {
   margin: 0 0 5px 0;
-  color: #007ECA;
+}
+
+main .about_area .about_area_item .about_area_content .about_area_content_title h5 {
+  padding: 7px 15px;
+  background-color: #ffe503;
+  display: inline-block;
 }
 
 main .about_area .about_area_item .about_area_content p span {

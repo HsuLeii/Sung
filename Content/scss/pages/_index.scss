@@ -79,10 +79,15 @@ main{
             }
     
             .about_area_content{
-                h4{
+                .about_area_content_title{
                     margin: 0 0 5px 0;
-                    color: $main_color;
+                    h5{
+                        padding: 7px 15px;
+                        background-color: $main_color_yellow;
+                        display: inline-block;
+                    }
                 }
+                
                 p{
                     span{
                         color: $main_color;

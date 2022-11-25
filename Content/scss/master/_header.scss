@@ -221,7 +221,7 @@ header {
                         left: 0;
                         top: 0;
                         background: $dropdownBg;
-                        visibility: visible;
+                        visibility: hidden;
                         opacity: 0;
                     }
                 }
@@ -297,6 +297,7 @@ header {
                             &.show {
                                 &~.dropdownBg {
                                     opacity: 1;
+                                    visibility: visible;
                                 }
                             }
 

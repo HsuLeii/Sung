@@ -44,7 +44,11 @@ h3 {
 h4 {
     font-size: 20px;
     line-height: 1.5;
+}
 
+h5 {
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 p {
@@ -127,6 +131,11 @@ body {
     text-align: center;
 }
 
+::selection {
+    background: $main_color_yellow;
+    color: $main_color;
+}
+
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
@@ -140,6 +149,10 @@ body {
 
     h4 {
         font-size: 21px;
+    }
+
+    h5 {
+        font-size: 17px;
     }
 
     p {
@@ -175,6 +188,10 @@ body {
         font-size: 23px;
     }
 
+    h5 {
+        font-size: 19px;
+    }
+
     p {
         font-size: 17px;
     }
@@ -196,6 +213,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+
+    h5 {
+        font-size: 21px;
+    }
 
     p {
         font-size: 19px;
@@ -228,6 +249,10 @@ body {
 
     h4 {
         font-size: 27px;
+    }
+
+    h5 {
+        font-size: 22px;
     }
 
     p {
