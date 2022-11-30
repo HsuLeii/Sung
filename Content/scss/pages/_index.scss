@@ -85,23 +85,22 @@ main{
                 .about_area_content_item{
                     background-color: $white;
                     box-shadow: 2px 9px 46px 0px $box_shadow_color;
-                    padding: 0px 40px;
-                    margin: 10px auto 10px;
+                    padding: 20px 30px;
+                    margin: 10px 0 10px;
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     flex-direction: column;
                     width: 100%;
                     .about_index{
-                        padding: 20px 0px;
-    
+
                         h3{
                             font-size: 60px;
                         }
     
                     }
                     .about_body{
-                        border-top: $grey solid 1px;
-                        padding: 20px 0px;
+                        padding: 10px 0 0;
+                        width: 100%;
     
                         .about_area_content_title{
                             margin: 0 0 10px 0;
@@ -110,6 +109,15 @@ main{
                         p{
                             span{
                                 color: $main_color;
+                            }
+                        }
+
+                        .about_body_item{
+                            display: flex;
+                            margin: 0 0 5px 0;
+
+                            .dot_notation{
+                                margin: 0 5px 0 0;
                             }
                         }
                     }
@@ -160,21 +168,6 @@ main{
                 max-width: 340px;
             }
         }
-
-        .about_area{
-            margin: 20px auto;
-    
-            .about_area_item{
-        
-                .about_area_content{
-                    .about_area_content_item{
-                        width: 45%;
-                    }
-                }
-            }
-    
-            
-        }
     }
 }
 
@@ -200,6 +193,22 @@ main{
             .photo_area{
                 max-width: 450px;
             }
+        }
+
+        .about_area{
+            margin: 20px auto;
+    
+            .about_area_item{
+        
+                .about_area_content{
+                    .about_area_content_item{
+                        width: 45%;
+                        margin: 15px 2.5%;
+                    }
+                }
+            }
+    
+            
         }
     }
 }
@@ -231,7 +240,50 @@ main{
                 max-width: 550px;
             }
         }
+
+        .about_area{
+    
+            .about_area_item{
+        
+                .about_area_content{
+                    .about_area_content_item{
+                        
+                        .about_body{
+    
+                            .about_body_item{
+    
+                                .dot_notation{
+                                    margin: 0 10px 0 0;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+    
+            
+        }
     }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+    main{
+        .about_area{
+    
+            .about_area_item{
+        
+                .about_area_content{
+                        .about_body{
+                            border-top: 1px solid $grey;
+                        }
+                        
+                    }
+                }
+                
+            }
+    
+            
+        }
+    }
