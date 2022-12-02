@@ -1,8 +1,4 @@
 main{
-    width: 80%;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 40px 0 120px;
     .title_name{
         display: flex;
         flex-direction: column;
@@ -136,7 +132,6 @@ main{
 
 @media screen and (min-width: 768px) {
     main{
-        margin: 80px auto;
         .title_name{
             flex-direction: row;
             align-items: center;
@@ -174,7 +169,6 @@ main{
 
 @media screen and (min-width: 992px) {
     main{
-        margin: 100px auto;
         .title_name{
             margin: 0px auto 80px;
             .name_area{
@@ -217,7 +211,6 @@ main{
 
 @media screen and (min-width: 1200px) {
     main{
-        margin: 120px auto;
         .title_name{
             margin: 0px auto 100px;
             justify-content: center;

@@ -20,6 +20,7 @@ legend,
 input,
 textarea,
 p,
+a,
 blockquote,
 th,
 td,
@@ -27,22 +28,26 @@ figure {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-weight: bold;
+    font-weight: 400;
+    color: $black;
 }
 
 h1 {
     font-size: 29px;
     line-height: 1.7;
+    font-weight: bold;
 }
 
 h3 {
     font-size: 28px;
     line-height: 1.7;
+    font-weight: bold;
 }
 
 h4 {
     font-size: 19px;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 h5 {
@@ -53,12 +58,13 @@ h5 {
 p {
     font-size: 14px;
     line-height: 1.7;
-    font-weight: 400;
 }
 
 span,
 th,
-td {
+td,
+ul,
+li {
     font-size: 14px;
     text-decoration: none;
     line-height: 1.7;
@@ -91,6 +97,7 @@ input[type=file]::file-selector-button {
 
 img {
     width: 100%;
+    line-height: 0;
 }
 
 button {
@@ -161,7 +168,9 @@ body {
 
     span,
     th,
-    td {
+    td,
+    ul,
+    li {
         font-size: 15px;
     }
 
@@ -198,7 +207,9 @@ body {
 
     span,
     th,
-    td {
+    td,
+    ul,
+    li {
         font-size: 17px;
     }
 
@@ -224,7 +235,9 @@ body {
 
     span,
     th,
-    td {
+    td,
+    ul,
+    li {
         font-size: 19px;
     }
 
@@ -261,7 +274,9 @@ body {
 
     span,
     th,
-    td {
+    td,
+    ul,
+    li {
         font-size: 20px;
     }
 

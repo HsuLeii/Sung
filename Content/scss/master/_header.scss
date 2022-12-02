@@ -234,6 +234,7 @@ header {
     &.fixed_header{
         background-color: $white;
         border-bottom: 1.5px solid $main_color;
+        box-shadow: 2px 9px 46px 0px $box_shadow_color;
     }
 }
 
