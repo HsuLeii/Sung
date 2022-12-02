@@ -38,17 +38,17 @@ figure {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 29px;
   line-height: 1.7;
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 28px;
   line-height: 1.7;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.5;
 }
 
@@ -60,6 +60,7 @@ h5 {
 p {
   font-size: 14px;
   line-height: 1.7;
+  font-weight: 400;
 }
 
 span,
@@ -145,13 +146,13 @@ body {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
   h3 {
-    font-size: 22px;
+    font-size: 29px;
   }
   h4 {
-    font-size: 21px;
+    font-size: 20px;
   }
   h5 {
     font-size: 17px;
@@ -175,10 +176,10 @@ body {
 
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: 35px;
+    font-size: 39px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 31px;
   }
   h4 {
     font-size: 23px;
@@ -226,13 +227,13 @@ body {
 
 @media screen and (min-width: 1400px) {
   h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 35px;
   }
   h4 {
-    font-size: 27px;
+    font-size: 26px;
   }
   h5 {
     font-size: 22px;
@@ -488,6 +489,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
 
 header.fixed_header {
   background-color: #fff;
+  border-bottom: 1.5px solid #007ECA;
 }
 
 @media screen and (min-width: 576px) {
@@ -571,17 +573,32 @@ header.fixed_header {
   }
 }
 
+.title_area .title_area_subtitle {
+  color: #007ECA;
+  border-bottom: 1px solid #007ECA;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.page_content_area .page_content_subtitle {
+  padding: 20px 0;
+}
+
+.page_content_area .page_content .page_content_img {
+  margin: 10px auto;
+}
+
 main {
   width: 80%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 40px 0 120px;
 }
 
 main .title_name {
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
+  margin: 0px auto 40px;
 }
 
 main .title_name .name_area .name_area_content {
@@ -698,11 +715,14 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    margin: 80px auto;
+  }
   main .title_name {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 60px auto;
+    margin: 0px auto 60px;
   }
   main .title_name .name_area {
     width: 50%;
@@ -725,8 +745,11 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
 }
 
 @media screen and (min-width: 992px) {
+  main {
+    margin: 100px auto;
+  }
   main .title_name {
-    margin: 80px auto;
+    margin: 0px auto 80px;
   }
   main .title_name .name_area {
     max-width: calc(100% - 450px);
@@ -750,8 +773,11 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
 }
 
 @media screen and (min-width: 1200px) {
+  main {
+    margin: 120px auto;
+  }
   main .title_name {
-    margin: 100px auto;
+    margin: 0px auto 100px;
     justify-content: center;
   }
   main .title_name .name_area {

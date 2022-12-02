@@ -1,0 +1,27 @@
+.title_area{
+    .title_area_subtitle{
+        color: $main_color;
+        border-bottom: 1px solid $main_color;
+        margin: 10px 0;
+        padding: 5px 0;
+    }
+}
+.page_content_area{
+    .page_content_subtitle{
+        padding: 20px 0;
+    }
+    .page_content{
+        .page_content_img{
+            margin: 10px auto;
+        }
+    }
+}
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

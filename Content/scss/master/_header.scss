@@ -233,6 +233,7 @@ header {
 
     &.fixed_header{
         background-color: $white;
+        border-bottom: 1.5px solid $main_color;
     }
 }
 

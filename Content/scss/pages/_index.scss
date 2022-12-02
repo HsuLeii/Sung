@@ -1,12 +1,12 @@
 main{
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 60px auto;
     padding: 40px 0 120px;
     .title_name{
         display: flex;
         flex-direction: column;
-        margin: 40px auto;
+        margin: 0px auto 40px;
         .name_area{
             .name_area_content{
                 display: flex;
@@ -136,11 +136,12 @@ main{
 
 @media screen and (min-width: 768px) {
     main{
+        margin: 80px auto;
         .title_name{
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            margin: 60px auto;
+            margin: 0px auto 60px;
 
             .name_area{
                 width: 50%;
@@ -173,8 +174,9 @@ main{
 
 @media screen and (min-width: 992px) {
     main{
+        margin: 100px auto;
         .title_name{
-            margin: 80px auto;
+            margin: 0px auto 80px;
             .name_area{
                 max-width: calc(100% - 450px);
                 .name_area_content{
@@ -215,8 +217,9 @@ main{
 
 @media screen and (min-width: 1200px) {
     main{
+        margin: 120px auto;
         .title_name{
-            margin: 100px auto;
+            margin: 0px auto 100px;
             justify-content: center;
             .name_area{
                 max-width: calc(100% - 450px);
