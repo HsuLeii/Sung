@@ -104,8 +104,8 @@ $(".dropdown-toggle").mouseover(function(){
 
     $(window).resize(function() {
 
-  if($(window).width() > 992){
-      $(".dropdown-toggle").mouseover(function(){
+      if ($(window).width() > 992) {
+        $(".dropdown-toggle").mouseover(function(){
       $(this).addClass("show");
       $(this).next(".dropdown-menu").addClass("show");
     });
@@ -119,9 +119,11 @@ $(".dropdown-toggle").mouseover(function(){
     $(".dropdown-menu").mouseout(function(){
       $(this).removeClass("show");
     });
-    }
+}
     });
 
 
   });
   </script>
+
+
