@@ -79,18 +79,15 @@
   <script src="Content/js/bootstrap-5.1.1.min.js"></script>
   <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
+
   <script>
     $(document).ready(function () {
       $("header").load("header.html", function () {});
-      $("footer").load("footer.html", function () {});
     });
   </script>
 
 <script>
   $(document).ready(function () {
-    $(".navbar-toggler").click(function () {
-      $(this).toggleClass("open")
-    });
     $(window).scroll(function() {
     if ($(this).scrollTop() > 0) {
       $("header").addClass("fixed_header");
@@ -100,6 +97,10 @@
   });
   });
 </script>
+
+
+
+
 
 </body>
 

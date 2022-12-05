@@ -46,7 +46,7 @@ h1 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 27px;
   line-height: 1.7;
   font-weight: bold;
 }
@@ -156,7 +156,7 @@ body {
     font-size: 36px;
   }
   h3 {
-    font-size: 29px;
+    font-size: 26px;
   }
   h4 {
     font-size: 20px;
@@ -188,7 +188,7 @@ body {
     font-size: 39px;
   }
   h3 {
-    font-size: 31px;
+    font-size: 29px;
   }
   h4 {
     font-size: 23px;
@@ -243,7 +243,7 @@ body {
     font-size: 44px;
   }
   h3 {
-    font-size: 35px;
+    font-size: 32px;
   }
   h4 {
     font-size: 26px;
@@ -592,7 +592,7 @@ header.fixed_header {
 main {
   width: 80%;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 40px 0;
 }
 
@@ -673,7 +673,7 @@ main .page_content_wrap .page_content .page_content_img {
 
 @media screen and (min-width: 1200px) {
   main {
-    margin: 120px auto;
+    margin: 100px auto;
   }
 }
 
@@ -708,7 +708,7 @@ main .title_name .name_area .name_area_content .english_name span {
 }
 
 main .title_name .name_area .ntnu_name {
-  margin: 10px 0 0 35px;
+  margin: 5px 0 0 0px;
 }
 
 main .title_name .photo_area {
@@ -814,7 +814,7 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
     font-size: 24px;
   }
   main .title_name .name_area .ntnu_name {
-    margin: 10px 0 0 25px;
+    margin: 10px 0 0 0px;
   }
   main .title_name .photo_area {
     margin: 0;
