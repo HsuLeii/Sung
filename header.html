@@ -73,5 +73,55 @@
 $(".navbar-toggler").click(function(){
   $(this).toggleClass("open");
 });
+
+$(".dropdown-toggle").mouseover(function(){
+  $(this).next("dropdown-menu").addClass("show");
+});
 });
 </script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+      if($(window).width() > 992){
+      $(".dropdown-toggle").mouseover(function(){
+      $(this).addClass("show");
+      $(this).next(".dropdown-menu").addClass("show");
+    });
+    $(".dropdown-menu").mouseover(function(){
+      $(this).addClass("show");
+    });
+    $(".dropdown-toggle").mouseout(function(){
+      $(this).removeClass("show");
+      $(this).next(".dropdown-menu").removeClass("show");
+    });
+    $(".dropdown-menu").mouseout(function(){
+      $(this).removeClass("show");
+    });
+    }
+
+    
+
+    $(window).resize(function() {
+
+  if($(window).width() > 992){
+      $(".dropdown-toggle").mouseover(function(){
+      $(this).addClass("show");
+      $(this).next(".dropdown-menu").addClass("show");
+    });
+    $(".dropdown-menu").mouseover(function(){
+      $(this).addClass("show");
+    });
+    $(".dropdown-toggle").mouseout(function(){
+      $(this).removeClass("show");
+      $(this).next(".dropdown-menu").removeClass("show");
+    });
+    $(".dropdown-menu").mouseout(function(){
+      $(this).removeClass("show");
+    });
+    }
+    });
+
+
+  });
+  </script>

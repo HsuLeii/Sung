@@ -408,7 +408,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dr
   position: relative;
   color: #2f2f2f;
   padding: 10px 0px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dropdown-item:before {
@@ -441,6 +441,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dr
   transition: .2s ease-in-out;
   background-color: transparent;
   color: #007ECA;
+  font-weight: bold;
 }
 
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dropdown-item:hover:before {
@@ -476,8 +477,12 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdo
   opacity: 0;
 }
 
+header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content .nav-link:hover {
+  font-weight: 400;
+}
+
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content ul {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content ul li {
@@ -538,15 +543,21 @@ header.fixed_header {
     border-bottom: 0px;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .nav-link {
-    margin: 20px;
-    padding: 0;
+    margin: 20px 20px 0;
+    padding: 0 0 20px;
     border-bottom: 2px solid transparent;
+  }
+  header .navbar .container-fluid .navbar-collapse .nav-item .nav-link:hover {
+    font-weight: bold;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .nav-link.show, header .navbar .container-fluid .navbar-collapse .nav-item .nav-link:hover {
     border-bottom: 2px solid #007ECA;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-toggle {
-    padding: 0 30px 0 10px;
+    padding: 0 5px 20px;
+  }
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-toggle::after {
+    display: none;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu {
     position: absolute;
@@ -554,6 +565,7 @@ header.fixed_header {
     background-color: #fff;
     left: auto;
     right: 0;
+    margin-top: 0;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.show ~ .dropdownBg {
     opacity: 1;
