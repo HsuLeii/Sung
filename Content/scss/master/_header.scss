@@ -13,12 +13,15 @@ header {
         padding: 0;
 
         .container-fluid {
-            justify-content: space-between;
+            justify-content: flex-end;
 
             .navbar-toggler{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 border: 0px;
+                height: 55px;
+
                 .navbar-toggler-icon{
                     background-image: none;
                     width: 35px;
@@ -87,6 +90,18 @@ header {
                     .nav-link {
                         color: $black;
                         padding: 20px 0px 10px 10px;
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $main_color;
+                            left: 0;
+                            bottom: 15px;
+                            display: none;
+                        }
                     }
 
                     .dropdown-toggle {
@@ -207,7 +222,7 @@ header {
 
                                     li {
                                         padding: 0 5px;
-                                        margin: 0 10px;
+                                        // margin: 0 10px;
                                     }
                                 }
                             }
@@ -292,21 +307,18 @@ header {
 
                         .nav-link {
                             margin: 20px 20px 0;
-                            padding: 0 0 20px;
-                            border-bottom: 2px solid transparent;
+                            padding: 0 5px 20px;
 
                             &:hover{
                                 font-weight: bold;
-                            }
 
-                            &.show,
-                            &:hover {
-                                border-bottom: 2px solid $main_color;
+                                &::before{
+                                    display: block;
+                                }
                             }
                         }
 
                         .dropdown-toggle{
-                            padding: 0 5px 20px;
 
                             &::after {
                                 display: none;
@@ -339,8 +351,12 @@ header {
                                     max-width: 350px;
                                     margin: 0 10px;
 
-                                    .nav-link {
-                                        border-bottom: 1px solid $main_color;
+                                    .nav-link{
+                                        &:hover{
+                                            &::before{
+                                                display: none;
+                                            }
+                                        }
                                     }
                                 }
 
