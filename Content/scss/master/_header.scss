@@ -63,6 +63,7 @@ header {
                 .navbar-nav {
                     padding: 5px 20px;
                     height: calc(100svh - 55px);
+                    height: calc(100vh - 55px);
                     overflow-y: scroll;
 
                     &::-webkit-scrollbar {
@@ -222,7 +223,6 @@ header {
 
                                     li {
                                         padding: 0 5px;
-                                        // margin: 0 10px;
                                     }
                                 }
                             }
