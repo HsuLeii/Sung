@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 body {
-  font-family: 'Lexend', 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
 }
 
 /*main*/
@@ -688,10 +687,6 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_titl
   border-bottom: 1px solid #007ECA;
 }
 
-main .page_content_wrap .page_content .page_content_part .page_content_paragraph {
-  margin: 0 0 15px;
-}
-
 main .page_content_wrap .page_content .page_content_part .page_content_paragraph .page_content_part_text {
   display: flex;
   margin: 5px 0;
@@ -701,6 +696,22 @@ main .page_content_wrap .page_content .page_content_part .page_content_paragraph
 main .page_content_wrap .page_content .page_content_part .page_content_part_text {
   margin: 0 0 15px;
   text-indent: 2em;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_part_subtitle {
+  display: flex;
+  margin: 0 0 5px;
+  font-weight: bold;
+  color: #007ECA;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_part_subtitle_content {
+  margin: 0 0 15px calc(1rem + 3px);
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_part_marker {
+  margin: 0 3px 0 0;
+  width: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -729,11 +740,11 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_text
     padding: 0 0 20px;
     margin: 0 0 20px;
   }
-  main .page_content_wrap .page_content .page_content_part .page_content_paragraph {
-    margin: 0 0 20px;
-  }
   main .page_content_wrap .page_content .page_content_part .page_content_part_text {
     margin: 0 0 20px;
+  }
+  main .page_content_wrap .page_content .page_content_part .page_content_part_subtitle_content {
+    margin: 0 0 20px calc(1rem + 3px);
   }
 }
 

@@ -70,7 +70,6 @@ main{
                     border-bottom: 1px solid $main_color;
                 }
                 .page_content_paragraph{
-                    margin: 0 0 15px;
                     .page_content_part_text{
                         display: flex;
                         margin: 5px 0;
@@ -80,6 +79,21 @@ main{
                 .page_content_part_text{
                     margin: 0 0 15px;
                     text-indent: 2em;
+                }
+                .page_content_part_subtitle{
+                    display: flex;
+                    margin: 0 0 5px;
+                    font-weight: bold;
+                    color: $main_color;
+                }
+
+                .page_content_part_subtitle_content{
+                    margin: 0 0 15px calc(1rem + 3px);
+                }
+                
+                .page_content_part_marker{
+                    margin: 0 3px 0 0;
+                    width: 1rem;
                 }
             }
         }
@@ -125,11 +139,11 @@ main{
                         padding: 0 0 20px;
                         margin: 0 0 20px;
                     }
-                    .page_content_paragraph{
-                        margin: 0 0 20px;
-                    }
                     .page_content_part_text{
                         margin: 0 0 20px;
+                    }
+                    .page_content_part_subtitle_content{
+                        margin: 0 0 20px calc(1rem + 3px);
                     }
                 }
             }
