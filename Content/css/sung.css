@@ -677,6 +677,32 @@ main .page_content_wrap .page_content .page_content_img {
   box-shadow: 10px 13px 13px 0 #2f2f2f1f;
 }
 
+main .page_content_wrap .page_content .page_content_part {
+  margin: 40px auto;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_part_title {
+  color: #007ECA;
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #007ECA;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_paragraph {
+  margin: 0 0 15px;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_paragraph .page_content_part_text {
+  display: flex;
+  margin: 5px 0;
+  text-indent: 0rem;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_part_text {
+  margin: 0 0 15px;
+  text-indent: 2em;
+}
+
 @media screen and (min-width: 768px) {
   main {
     margin: 80px auto;
@@ -695,6 +721,19 @@ main .page_content_wrap .page_content .page_content_img {
   }
   main .page_content_wrap .page_content .page_content_img {
     margin: 10px auto 40px;
+  }
+  main .page_content_wrap .page_content .page_content_part {
+    margin: 60px auto;
+  }
+  main .page_content_wrap .page_content .page_content_part .page_content_part_title {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+  }
+  main .page_content_wrap .page_content .page_content_part .page_content_paragraph {
+    margin: 0 0 20px;
+  }
+  main .page_content_wrap .page_content .page_content_part .page_content_part_text {
+    margin: 0 0 20px;
   }
 }
 

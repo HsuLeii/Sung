@@ -59,6 +59,29 @@ main{
                 border-radius: 5px;
                 box-shadow: 10px 13px 13px 0 $box_shadow_color;
             }
+
+            .page_content_part{
+                margin: 40px auto;
+
+                .page_content_part_title{
+                    color: $main_color;
+                    padding: 0 0 10px;
+                    margin: 0 0 10px;
+                    border-bottom: 1px solid $main_color;
+                }
+                .page_content_paragraph{
+                    margin: 0 0 15px;
+                    .page_content_part_text{
+                        display: flex;
+                        margin: 5px 0;
+                        text-indent: 0rem;
+                    }
+                }
+                .page_content_part_text{
+                    margin: 0 0 15px;
+                    text-indent: 2em;
+                }
+            }
         }
     }
 }
@@ -94,7 +117,23 @@ main{
                 .page_content_img{
                     margin: 10px auto 40px;
                 }
+
+                .page_content_part{
+                    margin: 60px auto;
+
+                    .page_content_part_title{
+                        padding: 0 0 20px;
+                        margin: 0 0 20px;
+                    }
+                    .page_content_paragraph{
+                        margin: 0 0 20px;
+                    }
+                    .page_content_part_text{
+                        margin: 0 0 20px;
+                    }
+                }
             }
+            
         }
     }
 }
