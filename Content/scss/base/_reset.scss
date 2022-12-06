@@ -74,6 +74,12 @@ a {
     font-size: 14px;
     text-decoration: none;
     line-height: 1.7;
+
+    &:active
+{
+    border-style: none;
+    border: 0px;
+}
 }
 
 ruby {

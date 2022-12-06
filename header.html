@@ -1,56 +1,60 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       <span class="navbar-toggler-icon"></span>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-          <li class="nav-item">
-              <a class="nav-link" href="index.html" >
-                個人經歷
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  實驗室簡介
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="readability.html">可讀性研究</a></li>
-                <li><a class="dropdown-item" href="#">診斷測驗</a></li>
-                <li><a class="dropdown-item" href="#">數位學習</a></li>
-                <li><a class="dropdown-item" href="#">職涯測驗系統</a></li>
-              </ul>
-              <div class="dropdownBg"></div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink123" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  研究成果
-              </a>
-              <ul class="dropdown-menu dropdown-menu-theme" aria-labelledby="navbarDropdownMenuLink123">
-                        <div class="dropdown-menu-theme-content">
-                          <a class="nav-link dropdown-toggle">學術著作</a>
-                          <ul >
-                              <li><a class="dropdown-item" href="#">期刊論文(按年列)</a></li>
-                              <li><a class="dropdown-item" href="#">專書</a></li>
-                              <li><a class="dropdown-item" href="#">會議論文</a></li>
-                              <li><a class="dropdown-item" href="#">測驗工具</a></li>
-                            </ul>
-                      </div>
-                      <div class="dropdown-menu-theme-content">
-                          <a class="nav-link dropdown-toggle">研究計畫</a>
-                          <ul >
-                              <li><a class="dropdown-item" href="#">國科會計畫</a></li>
-                              <li><a class="dropdown-item" href="#">一般計畫</a></li>
-                            </ul>
-                      </div>
-              </ul>
-              <div class="dropdownBg"></div>
-            </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            個人經歷
+          </a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            實驗室簡介
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="readability.html">可讀性研究</a></li>
+            <li><a class="dropdown-item" href="#">診斷測驗</a></li>
+            <li><a class="dropdown-item" href="#">數位學習</a></li>
+            <li><a class="dropdown-item" href="#">職涯測驗系統</a></li>
+          </ul>
+          <div class="dropdownBg"></div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink123" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            研究成果
+          </a>
+          <ul class="dropdown-menu dropdown-menu-theme" aria-labelledby="navbarDropdownMenuLink123">
+            <div class="dropdown-menu-theme-content">
+              <a class="nav-link dropdown-toggle">學術著作</a>
+              <ul>
+                <li><a class="dropdown-item" href="#">期刊論文(按年列)</a></li>
+                <li><a class="dropdown-item" href="#">專書</a></li>
+                <li><a class="dropdown-item" href="#">會議論文</a></li>
+                <li><a class="dropdown-item" href="#">測驗工具</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-menu-theme-content">
+              <a class="nav-link dropdown-toggle">研究計畫</a>
+              <ul>
+                <li><a class="dropdown-item" href="#">國科會計畫</a></li>
+                <li><a class="dropdown-item" href="#">一般計畫</a></li>
+              </ul>
+            </div>
+          </ul>
+          <div class="dropdownBg"></div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             社會貢獻
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -69,61 +73,36 @@
 </nav>
 
 <script>
-  $(document).ready(function(){
-$(".navbar-toggler").click(function(){
-  $(this).toggleClass("open");
-});
+  $(document).ready(function () {
+    $(".navbar-toggler").click(function () {
+      $(this).toggleClass("open");
+    });
 
-$(".dropdown-toggle").mouseover(function(){
-  $(this).next("dropdown-menu").addClass("show");
-});
-});
+    $(".dropdown-toggle").mouseover(function () {
+      $(this).next("dropdown-menu").addClass("show");
+    });
+  });
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function(){
-    
-      if($(window).width() > 992){
-      $(".dropdown-toggle").mouseover(function(){
-      $(this).addClass("show");
-      $(this).next(".dropdown-menu").addClass("show");
-    });
-    $(".dropdown-menu").mouseover(function(){
-      $(this).addClass("show");
-    });
-    $(".dropdown-toggle").mouseout(function(){
-      $(this).removeClass("show");
-      $(this).next(".dropdown-menu").removeClass("show");
-    });
-    $(".dropdown-menu").mouseout(function(){
-      $(this).removeClass("show");
-    });
+  $(document).ready(function () {
+
+    if ($(window).width() > 992) {
+      $(".dropdown-toggle").mouseover(function () {
+        $(this).addClass("show");
+        $(this).next(".dropdown-menu").addClass("show");
+      });
+      $(".dropdown-menu").mouseover(function () {
+        $(this).addClass("show");
+      });
+      $(".dropdown-toggle").mouseout(function () {
+        $(this).removeClass("show");
+        $(this).next(".dropdown-menu").removeClass("show");
+      });
+      $(".dropdown-menu").mouseout(function () {
+        $(this).removeClass("show");
+      });
     }
 
-    
-
-    $(window).resize(function() {
-
-      if ($(window).width() > 992) {
-        $(".dropdown-toggle").mouseover(function(){
-      $(this).addClass("show");
-      $(this).next(".dropdown-menu").addClass("show");
-    });
-    $(".dropdown-menu").mouseover(function(){
-      $(this).addClass("show");
-    });
-    $(".dropdown-toggle").mouseout(function(){
-      $(this).removeClass("show");
-      $(this).next(".dropdown-menu").removeClass("show");
-    });
-    $(".dropdown-menu").mouseout(function(){
-      $(this).removeClass("show");
-    });
-}
-    });
-
-
   });
-  </script>
-
-
+</script>
