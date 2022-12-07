@@ -73,12 +73,25 @@ main{
                     .page_content_part_text{
                         display: flex;
                         margin: 5px 0;
-                        text-indent: 0rem;
+                        text-indent: 0em;
                     }
                 }
                 .page_content_part_text{
                     margin: 0 0 15px;
                     text-indent: 2em;
+
+                    a{
+                        color: $main_color;
+
+                        &:hover{
+                            color: darken($main_color, 10%);
+                            border-bottom: 1px solid darken($main_color, 10%);
+                        }
+                    }
+
+                    &.page_content_part_text_option{
+                        margin: 5px 0 5px 2em;
+                    }
                 }
                 .page_content_part_subtitle{
                     display: flex;
