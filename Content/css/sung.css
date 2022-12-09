@@ -87,6 +87,25 @@ a:active {
   border: 0px;
 }
 
+b {
+  color: #007ECA;
+}
+
+b.note {
+  position: relative;
+}
+
+b.note::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0%;
+  background-color: #ffe503;
+  top: 70%;
+  z-index: -1;
+}
+
 ruby {
   letter-spacing: 1.8px;
   line-height: 3;
