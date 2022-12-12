@@ -92,18 +92,7 @@ b {
 }
 
 b.note {
-  position: relative;
-}
-
-b.note::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 20%;
-  left: 0%;
-  background-color: #ffe503;
-  top: 70%;
-  z-index: -1;
+  background: linear-gradient(0deg, #ffe503 20%, transparent 20%);
 }
 
 ruby {
@@ -387,7 +376,6 @@ header .navbar .container-fluid .navbar-collapse .navbar-nav::-webkit-scrollbar-
 
 header .navbar .container-fluid .navbar-collapse .nav-item {
   border-bottom: 2px solid #2f2f2f;
-  margin: 0 0 10px 0;
 }
 
 header .navbar .container-fluid .navbar-collapse .nav-item .nav-link {
@@ -722,11 +710,15 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_text
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text a {
   color: #007ECA;
+  border-bottom: 1px solid #005e97;
+  background: linear-gradient(#ffe503, #ffe503) 0 100%/0 100% no-repeat;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text a:hover {
+  background-size: 100% 100%;
+  transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1) 0s;
   color: #005e97;
-  border-bottom: 1px solid #005e97;
+  border-bottom: 0px solid;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text.page_content_part_text_option {
