@@ -699,7 +699,7 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_titl
 
 main .page_content_wrap .page_content .page_content_part .page_content_paragraph .page_content_part_text {
   display: flex;
-  margin: 5px 0;
+  margin: 10px 0;
   text-indent: 0em;
 }
 
@@ -741,6 +741,10 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_mark
   width: 1rem;
 }
 
+main .page_content_wrap .page_content .page_content_part .page_content_part_marker_text {
+  width: calc(100% - 1rem - 3px);
+}
+
 @media screen and (min-width: 768px) {
   main {
     margin: 80px auto;
@@ -779,6 +783,40 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_mark
   main {
     margin: 100px auto;
   }
+}
+
+.st0 {
+  fill: #007ECA;
+}
+
+.st1 {
+  stroke: #007ECA;
+  stroke-width: 1px;
+  fill: none;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+.democlass {
+  stroke-dashoffset: 10;
+  transition: 0.8s;
+}
+
+.scroll_top {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 70px;
+}
+
+.scroll_top:hover .st0 {
+  fill: #ffe503;
+}
+
+.scroll_top:hover .st1 {
+  stroke-dashoffset: 0;
+  transition: 0.8s;
+  fill: wheat;
 }
 
 main .title_name {

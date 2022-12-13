@@ -72,7 +72,7 @@ main{
                 .page_content_paragraph{
                     .page_content_part_text{
                         display: flex;
-                        margin: 5px 0;
+                        margin: 10px 0;
                         text-indent: 0em;
                     }
                 }
@@ -112,6 +112,9 @@ main{
                 .page_content_part_marker{
                     margin: 0 3px 0 0;
                     width: 1rem;
+                }
+                .page_content_part_marker_text{
+                    width: calc(100% - 1rem - 3px);
                 }
             }
         }
@@ -179,3 +182,37 @@ main{
 }
 
 @media screen and (min-width: 1400px) {}
+.st0{fill:$main_color}
+.st1{
+    stroke: $main_color;
+    stroke-width: 1px;
+    fill: none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    
+}
+
+.democlass{
+
+    stroke-dashoffset: 10;
+
+    transition: 0.8s;
+}
+
+.scroll_top{
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    width: 70px;
+    &:hover{
+        .st0{
+            fill:$main_color_yellow
+        }
+
+        .st1{
+            stroke-dashoffset: 0;
+            transition: 0.8s;
+            fill:wheat;
+            }
+    }
+}
