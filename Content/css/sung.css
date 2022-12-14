@@ -658,6 +658,10 @@ main .category_wrap .category_inner .category_nav ul li a:hover {
   color: #007ECA;
 }
 
+main .title_wrap {
+  margin: 0 0 10px;
+}
+
 main .title_wrap .title_wrap_subtitle {
   color: #007ECA;
   position: relative;
@@ -667,7 +671,7 @@ main .title_wrap .title_wrap_subtitle {
 main .title_wrap .title_wrap_subtitle::after {
   content: "";
   position: absolute;
-  width: 105%;
+  width: 100%;
   height: 20%;
   left: 0%;
   background-color: #ffe503;
