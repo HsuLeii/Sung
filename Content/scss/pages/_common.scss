@@ -113,20 +113,46 @@ main {
                     margin: 0 0 5px;
                     font-weight: bold;
                     color: $main_color;
+
+                    .page_content_part_marker{
+                        &::after{
+                            background-color: $main_color;
+                        }
+                    }
                 }
 
                 .page_content_part_subtitle_content {
                     margin: 0 0 15px calc(1rem + 3px);
                 }
 
-                .page_content_part_marker {
-                    margin: 0 3px 0 0;
-                    width: 1rem;
-                }
-
                 .page_content_part_marker_text {
                     width: calc(100% - 1rem - 3px);
                 }
+            }
+        }
+    }
+
+    .page_content_part_marker {
+        margin: 0 3px 0 0;
+        width: 1rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            background-color: $black;
+            transform: translate(0px, -50%);
+            border-radius: 50%;
+            left: 0;
+            top: 14px;
+            width: 7px;
+            height: 7px;
+        }
+
+        &.border_marker{
+            &::after{
+                background-color: transparent;
+                border: 1px solid $black;
             }
         }
     }
@@ -214,11 +240,30 @@ main {
             }
 
         }
+
+        .page_content_part_marker {
+    
+            &::after{
+                top: 15px;
+                width: 7.5px;
+                height: 7.5px;
+            }
+        }
     }
 }
 
 @media screen and (min-width: 992px) {
     main{
+
+        .page_content_part_marker {
+    
+            &::after{
+                top: 17px;
+                width: 8.5px;
+                height: 8.5px;
+            }
+        }
+
         .scroll_top {
             width: 50px;
             right: 5%;
@@ -231,7 +276,27 @@ main {
 @media screen and (min-width: 1200px) {
     main {
         margin: 100px auto;
+        .page_content_part_marker {
+    
+            &::after{
+                top: 19px;
+                width: 9.5px;
+                height: 9.5px;
+            }
+        }
+        }
+    }
+
+
+@media screen and (min-width: 1400px) {
+    main {
+        .page_content_part_marker {
+    
+            &::after{
+                top: 20px;
+                width: 10px;
+                height: 10px;
+            }
+        }
     }
 }
-
-@media screen and (min-width: 1400px) {}
