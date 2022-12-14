@@ -4,27 +4,29 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmartPhonics英語字母拼讀</title>
-  <meta name="description" content="SmartPhonics英語字母拼讀">
+  <title>宋曜廷 國立臺灣師範大學副校長 教育心理與輔導學系</title>
+  <meta name="description"
+    content="國立臺灣師範大學副校長,宋曜廷,Yao-Ting Sung,教育心理與輔導學系講座教授,專長領域：教育心理學、心理與教育測驗、電腦輔助學習、電腦輔助測驗與評量、混合研究法、職涯資訊分析與應用、中文文本分析" />
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SmartPhonics英語字母拼讀">
-  <meta property="og:site_name" content="SmartPhonics英語字母拼讀">
+  <meta property="og:title" content="宋曜廷 國立臺灣師範大學副校長 教育心理與輔導學系">
+  <meta property="og:site_name" content="宋曜廷 國立臺灣師範大學副校長 教育心理與輔導學系">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <!-- 之後改成正式網址的連結 -->
-  <meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+  <meta property="og:image" content="https://hsuleii.github.io/sung/Content/image/main/og_image.jpg">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="SmartPhonics英語字母拼讀">
+  <meta name="twitter:title" content="宋曜廷 國立臺灣師範大學副校長 教育心理與輔導學系">
   <!-- 之後改成正式網址的連結 -->
-  <meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
-  <meta itemprop="name" content="SmartPhonics英語字母拼讀">
+  <meta name="twitter:image" content="https://hsuleii.github.io/sung/Content/image/main/og_image.jpg">
+  <meta itemprop="name" content="宋曜廷 國立臺灣師範大學副校長 教育心理與輔導學系">
   <!-- 之後改成正式網址的連結 -->
-  <meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
-  <link rel="shortcut icon" type="image/x-icon" href="Content/image/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="Content/css/bootstrap-5.1.1.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+  <meta itemprop="image" content="https://hsuleii.github.io/sung/Content/image/main/og_image.jpg">
+
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="Content/image/favicon.ico"> -->
 
   <!-- this page widgets CSS -->
+  <link rel="stylesheet" type="text/css" href="Content/css/bootstrap-5.1.1.min.css">
+  <link rel="stylesheet" href="Content/css/font-awesome-6.2.0.css">
 
   <!-- my core CSS -->
   <link rel="stylesheet" href="Content/css/sung.css">
@@ -152,7 +154,28 @@ s0.5-0.2,0.5-0.4v-16l4.5,4.5c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0,0.3-0.1,0.4-0.2C20.8,
           $("header").removeClass("fixed_header");
         }
       });
+
     });
+
+    //scroll-top 按鈕開始
+    $(document).ready(function () {
+      $(".scroll_top").hide();
+      $(window).scroll(function () {
+        var windowTop = $(window).scrollTop();
+        if (windowTop > 100) {
+          $(".scroll_top").fadeIn();
+        } else {
+          $(".scroll_top").fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $(".scroll_top").click(function () {
+        $("body,html").animate({
+          scrollTop: 0
+        }, 200);
+      });
+    });
+    //scroll-top 按鈕結束
   </script>
 
 </body>
