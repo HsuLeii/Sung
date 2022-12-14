@@ -533,7 +533,6 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
 }
 
 header.fixed_header {
-  background-color: #fff;
   border-bottom: 1.5px solid #007ECA;
   box-shadow: 2px 9px 46px 0px #2f2f2f1f;
 }
@@ -547,7 +546,6 @@ header.fixed_header {
 @media screen and (min-width: 992px) {
   header {
     padding: 0px 2.5%;
-    background-color: transparent;
   }
   header .navbar .container-fluid {
     justify-content: center;

@@ -251,7 +251,6 @@ header {
     }
 
     &.fixed_header{
-        background-color: $white;
         border-bottom: 1.5px solid $main_color;
         box-shadow: 2px 9px 46px 0px $box_shadow_color;
     }
@@ -278,7 +277,6 @@ header {
 @media screen and (min-width: 992px) {
     header {
         padding: 0px 2.5%;
-        background-color: transparent;
 
         .navbar {
 
