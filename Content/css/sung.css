@@ -745,6 +745,33 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_mark
   width: calc(100% - 1rem - 3px);
 }
 
+main .scroll_top {
+  position: fixed;
+  right: 1%;
+  bottom: 30px;
+  max-width: 50px;
+  width: 8%;
+  cursor: pointer;
+}
+
+main .scroll_top .scroll_top_arrow {
+  fill: #007ECA;
+  position: absolute;
+}
+
+main .scroll_top .scroll_top_border {
+  stroke: #007ECA;
+  fill: none;
+  stroke-width: 1px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: 0.8s;
+}
+
+main .scroll_top:hover .scroll_top_border {
+  stroke-dashoffset: 0;
+}
+
 @media screen and (min-width: 768px) {
   main {
     margin: 80px auto;
@@ -779,44 +806,19 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_mark
   }
 }
 
+@media screen and (min-width: 992px) {
+  main .scroll_top {
+    width: 50px;
+    right: 5%;
+    bottom: 50px;
+    transform: translate(50%, 0px);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   main {
     margin: 100px auto;
   }
-}
-
-.st0 {
-  fill: #007ECA;
-}
-
-.st1 {
-  stroke: #007ECA;
-  stroke-width: 1px;
-  fill: none;
-  stroke-dasharray: 100;
-  stroke-dashoffset: 100;
-}
-
-.democlass {
-  stroke-dashoffset: 10;
-  transition: 0.8s;
-}
-
-.scroll_top {
-  position: fixed;
-  right: 60px;
-  bottom: 60px;
-  width: 70px;
-}
-
-.scroll_top:hover .st0 {
-  fill: #ffe503;
-}
-
-.scroll_top:hover .st1 {
-  stroke-dashoffset: 0;
-  transition: 0.8s;
-  fill: wheat;
 }
 
 main .title_name {

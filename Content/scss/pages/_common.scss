@@ -1,26 +1,29 @@
-main{
+main {
     width: 80%;
     max-width: 1200px;
     margin: 40px auto;
     padding: 40px 0;
 
-    .category_wrap{
+    .category_wrap {
         padding: 5px 0 10px;
         margin: 0 auto 20px;
         border-bottom: 1px solid $grey;
 
-        .category_inner{
-            .category_nav{
-                ul{
+        .category_inner {
+            .category_nav {
+                ul {
                     display: flex;
                     justify-content: flex-end;
-                    li{
+
+                    li {
                         font-size: 10px;
-                        a{
+
+                        a {
                             font-size: 10px;
                             color: $black;
                             padding: 5px 0;
-                            &:hover{
+
+                            &:hover {
                                 border-bottom: 1px solid $main_color;
                                 color: $main_color;
                             }
@@ -30,13 +33,14 @@ main{
             }
         }
     }
-    .title_wrap{
-        .title_wrap_subtitle{
+
+    .title_wrap {
+        .title_wrap_subtitle {
             color: $main_color;
             position: relative;
             display: initial;
 
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 width: 105%;
@@ -48,74 +52,109 @@ main{
             }
         }
     }
-    .page_content_wrap{
-        .page_content_subtitle{
+
+    .page_content_wrap {
+        .page_content_subtitle {
             padding: 10px 0;
         }
-        .page_content{
-            .page_content_img{
+
+        .page_content {
+            .page_content_img {
                 margin: 10px auto 20px;
                 border: 3px solid $main_color_yellow;
                 border-radius: 5px;
                 box-shadow: 10px 13px 13px 0 $box_shadow_color;
             }
 
-            .page_content_part{
+            .page_content_part {
                 margin: 40px auto;
 
-                .page_content_part_title{
+                .page_content_part_title {
                     color: $main_color;
                     padding: 0 0 10px;
                     margin: 0 0 10px;
                     border-bottom: 1px solid $main_color;
                 }
-                .page_content_paragraph{
-                    .page_content_part_text{
+
+                .page_content_paragraph {
+                    .page_content_part_text {
                         display: flex;
                         margin: 10px 0;
                         text-indent: 0em;
                     }
                 }
-                .page_content_part_text{
+
+                .page_content_part_text {
                     margin: 0 0 15px;
                     text-indent: 2em;
 
-                    a{
+                    a {
                         color: $main_color;
                         border-bottom: 1px solid darken($main_color, 10%);
-                        background: linear-gradient($main_color_yellow,$main_color_yellow) 0 100%/0 100% no-repeat;
+                        background: linear-gradient($main_color_yellow, $main_color_yellow) 0 100%/0 100% no-repeat;
 
-                        &:hover{
+                        &:hover {
                             background-size: 100% 100%;
-                            transition: background-size .45s cubic-bezier(.76,0,.24,1) 0s;
+                            transition: background-size .45s cubic-bezier(.76, 0, .24, 1) 0s;
                             color: darken($main_color, 10%);
                             border-bottom: 0px solid;
                         }
 
                     }
 
-                    &.page_content_part_text_option{
+                    &.page_content_part_text_option {
                         margin: 5px 0 5px 2em;
                     }
                 }
-                .page_content_part_subtitle{
+
+                .page_content_part_subtitle {
                     display: flex;
                     margin: 0 0 5px;
                     font-weight: bold;
                     color: $main_color;
                 }
 
-                .page_content_part_subtitle_content{
+                .page_content_part_subtitle_content {
                     margin: 0 0 15px calc(1rem + 3px);
                 }
-                
-                .page_content_part_marker{
+
+                .page_content_part_marker {
                     margin: 0 3px 0 0;
                     width: 1rem;
                 }
-                .page_content_part_marker_text{
+
+                .page_content_part_marker_text {
                     width: calc(100% - 1rem - 3px);
                 }
+            }
+        }
+    }
+
+    .scroll_top {
+        position: fixed;
+        right: 1%;
+        bottom: 30px;
+        max-width: 50px;
+        width: 8%;
+        cursor: pointer;
+
+        .scroll_top_arrow {
+            fill: $main_color;
+            position: absolute;
+        }
+
+        .scroll_top_border {
+            stroke: $main_color;
+            fill: none;
+            stroke-width: 1px;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            transition: 0.8s;
+        }
+
+        &:hover {
+            .scroll_top_border {
+                stroke-dashoffset: 0;
             }
         }
     }
@@ -124,18 +163,19 @@ main{
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
-    main{
+    main {
         margin: 80px auto;
 
-        .category_wrap{
+        .category_wrap {
             margin: 0 auto 40px;
-    
-            .category_inner{
-                .category_nav{
-                    ul{
-                        li{
+
+            .category_inner {
+                .category_nav {
+                    ul {
+                        li {
                             font-size: 15px;
-                            a{
+
+                            a {
                                 font-size: 15px;
                             }
                         }
@@ -143,76 +183,54 @@ main{
                 }
             }
         }
-    
-        .page_content_wrap{
-            .page_content_subtitle{
+
+        .page_content_wrap {
+            .page_content_subtitle {
                 padding: 20px 0;
             }
-            .page_content{
-                .page_content_img{
+
+            .page_content {
+                .page_content_img {
                     margin: 10px auto 40px;
                 }
 
-                .page_content_part{
+                .page_content_part {
                     margin: 60px auto;
 
-                    .page_content_part_title{
+                    .page_content_part_title {
                         padding: 0 0 20px;
                         margin: 0 0 20px;
                     }
-                    .page_content_part_text{
+
+                    .page_content_part_text {
                         margin: 0 0 20px;
                     }
-                    .page_content_part_subtitle_content{
+
+                    .page_content_part_subtitle_content {
                         margin: 0 0 20px calc(1rem + 3px);
                     }
                 }
             }
-            
+
         }
     }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    main{
+        .scroll_top {
+            width: 50px;
+            right: 5%;
+            bottom: 50px;
+            transform: translate(50%, 0px);
+        }
+    }
+}
 
 @media screen and (min-width: 1200px) {
-    main{
+    main {
         margin: 100px auto;
     }
 }
 
 @media screen and (min-width: 1400px) {}
-.st0{fill:$main_color}
-.st1{
-    stroke: $main_color;
-    stroke-width: 1px;
-    fill: none;
-    stroke-dasharray: 100;
-    stroke-dashoffset: 100;
-    
-}
-
-.democlass{
-
-    stroke-dashoffset: 10;
-
-    transition: 0.8s;
-}
-
-.scroll_top{
-    position: fixed;
-    right: 60px;
-    bottom: 60px;
-    width: 70px;
-    &:hover{
-        .st0{
-            fill:$main_color_yellow
-        }
-
-        .st1{
-            stroke-dashoffset: 0;
-            transition: 0.8s;
-            fill:wheat;
-            }
-    }
-}
