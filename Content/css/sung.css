@@ -785,7 +785,7 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_subt
 }
 
 main .page_content_part_marker {
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
   width: 7;
   position: relative;
 }
@@ -808,7 +808,7 @@ main .page_content_part_marker.border_marker::after {
 }
 
 main .page_content_part_marker_text {
-  width: calc(100% - 7px - 10px);
+  width: calc(100% - 7px - 15px);
 }
 
 main .scroll_top {
