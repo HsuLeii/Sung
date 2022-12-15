@@ -75,6 +75,20 @@ main {
                     padding: 0 0 10px;
                     margin: 0 0 10px;
                     border-bottom: 1px solid $main_color;
+
+                    a {
+                        color: $main_color;
+                        border-bottom: 1px solid darken($main_color, 10%);
+                        background: linear-gradient($main_color_yellow, $main_color_yellow) 0 100%/0 100% no-repeat;
+
+                        &:hover {
+                            background-size: 100% 100%;
+                            transition: background-size .45s cubic-bezier(.76, 0, .24, 1) 0s;
+                            color: darken($main_color, 10%);
+                            border-bottom: 0px solid;
+                        }
+
+                    }
                 }
 
                 .page_content_paragraph {
@@ -86,7 +100,7 @@ main {
                 }
 
                 .page_content_part_text {
-                    margin: 0 0 15px;
+                    padding: 15px 0;
                     text-indent: 2em;
 
                     a {
@@ -106,6 +120,16 @@ main {
                     &.page_content_part_text_option {
                         margin: 5px 0 5px 2em;
                     }
+
+                    &.border_bottom{
+                        border-bottom: 1px dotted $black;
+
+                        &:nth-last-child(1){
+                            border-bottom: 0px;
+                        }
+
+                    }
+                    
                 }
 
                 .page_content_part_subtitle {
@@ -125,16 +149,14 @@ main {
                     margin: 0 0 15px calc(1rem + 3px);
                 }
 
-                .page_content_part_marker_text {
-                    width: calc(100% - 1rem - 3px);
-                }
+                
             }
         }
     }
 
     .page_content_part_marker {
-        margin: 0 3px 0 0;
-        width: 1rem;
+        margin: 0 10px 0 0;
+        width: 7;
         position: relative;
 
         &::after{
@@ -144,7 +166,7 @@ main {
             transform: translate(0px, -50%);
             border-radius: 50%;
             left: 0;
-            top: 14px;
+            top: calc(14px * 0.85);
             width: 7px;
             height: 7px;
         }
@@ -155,6 +177,10 @@ main {
                 border: 1px solid $black;
             }
         }
+    }
+
+    .page_content_part_marker_text {
+        width: calc(100% - 7px - 10px);
     }
 
     .scroll_top {
@@ -230,7 +256,7 @@ main {
                     }
 
                     .page_content_part_text {
-                        margin: 0 0 20px;
+                        padding: 20px 0;
                     }
 
                     .page_content_part_subtitle_content {
@@ -244,9 +270,7 @@ main {
         .page_content_part_marker {
     
             &::after{
-                top: 15px;
-                width: 7.5px;
-                height: 7.5px;
+                top: calc(15px * 0.85);
             }
         }
     }
@@ -258,9 +282,7 @@ main {
         .page_content_part_marker {
     
             &::after{
-                top: 17px;
-                width: 8.5px;
-                height: 8.5px;
+                top: calc(17px * 0.85);
             }
         }
 
@@ -279,9 +301,7 @@ main {
         .page_content_part_marker {
     
             &::after{
-                top: 19px;
-                width: 9.5px;
-                height: 9.5px;
+                top: calc(19px * 0.85);
             }
         }
         }
@@ -293,9 +313,7 @@ main {
         .page_content_part_marker {
     
             &::after{
-                top: 20px;
-                width: 10px;
-                height: 10px;
+                top: calc(20px * 0.85);
             }
         }
     }
