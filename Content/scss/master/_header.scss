@@ -271,7 +271,7 @@ header {
             .container-fluid {
 
                 .navbar-collapse {
-                    width: 340px;
+                    width: 65%;
                 }
             }
         }
@@ -339,6 +339,12 @@ header {
                             right: 0;
                             margin-top: 0;
 
+                            li {
+                                .dropdown-item {
+                                    white-space: initial;
+                                }
+                            }
+
                             &.show {
                                 &~.dropdownBg {
                                     opacity: 1;
@@ -348,13 +354,15 @@ header {
 
                             &.dropdown-menu-theme {
                                 flex-direction: row;
-                                width: 570px;
+                                justify-content: flex-start;
+                                width: 540px;
                                 max-width: 740px;
+                                overflow-x: scroll;
 
                                 .dropdown-menu-theme-content {
-                                    width: 265px;
-                                    max-width: 350px;
+                                    width: auto;
                                     margin: 0 10px;
+                                    min-width: 265px;
 
                                     .nav-link{
                                         &:hover{
@@ -385,8 +393,6 @@ header {
                         }
 
                     }
-
-                    
 
                 }
             }

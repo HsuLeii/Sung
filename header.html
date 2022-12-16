@@ -51,6 +51,47 @@
           </ul>
           <div class="dropdownBg"></div>
         </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            社會貢獻
+          </a>
+          <ul class="dropdown-menu dropdown-menu-theme" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu-theme-content">
+              <a class="nav-link dropdown-toggle">診斷測驗</a>
+              <ul>
+                <li><a class="dropdown-item" href="research_papers.html">可讀性</a></li>
+                <li><a class="dropdown-item" href="research_bookPaper.html">英語診斷</a></li>
+                <li><a class="dropdown-item" href="research_proceedings.html">職涯測驗</a></li>
+                <li><a class="dropdown-item" href="research_quizTool.html">眼動儀</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-menu-theme-content">
+              <a class="nav-link dropdown-toggle">教育相關</a>
+              <ul>
+                <li><a class="dropdown-item" href="#">幼兒教育</a></li>
+                <li><a class="dropdown-item" href="#">PASSION補救教學</a></li>
+                <li><a class="dropdown-item" href="#">PASSION偏鄉優質教育學分學程</a></li>
+                <li><a class="dropdown-item" href="#">基測會考</a></li>
+                <li><a class="dropdown-item" href="#">華語教學</a></li>
+                <li><a class="dropdown-item" href="#">科普閱讀力大賽</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-menu-theme-content">
+              <a class="nav-link dropdown-toggle">記者會/合作案</a>
+              <ul>
+                <li><a class="dropdown-item" href="#">語言政策論壇記者會</a></li>
+                <li><a class="dropdown-item" href="#">新北市教育局合作案</a></li>
+                <li><a class="dropdown-item" href="#">新北市圖書館合作案</a></li>
+                <li><a class="dropdown-item" href="#">金門縣政府合作案</a></li>
+                <li><a class="dropdown-item" href="#">台南市政府教育局合作案</a></li>
+              </ul>
+            </div>
+          </ul>
+          <div class="dropdownBg"></div>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,7 +127,7 @@
 <script type="text/javascript">
   $(document).ready(function () {
 
-    if ($(window).width() > 992) {
+    if ($(window).width() > 991) {
       $(".dropdown-toggle").mouseover(function () {
         $(this).addClass("show");
         $(this).next(".dropdown-menu").addClass("show");

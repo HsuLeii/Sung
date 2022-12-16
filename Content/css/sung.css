@@ -560,7 +560,7 @@ header.fixed_header {
 
 @media screen and (min-width: 576px) {
   header .navbar .container-fluid .navbar-collapse {
-    width: 340px;
+    width: 65%;
   }
 }
 
@@ -610,19 +610,24 @@ header.fixed_header {
     right: 0;
     margin-top: 0;
   }
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu li .dropdown-item {
+    white-space: initial;
+  }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.show ~ .dropdownBg {
     opacity: 1;
     visibility: visible;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
     flex-direction: row;
-    width: 570px;
+    justify-content: flex-start;
+    width: 540px;
     max-width: 740px;
+    overflow-x: scroll;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content {
-    width: 265px;
-    max-width: 350px;
+    width: auto;
     margin: 0 10px;
+    min-width: 265px;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content .nav-link:hover::before {
     display: none;
@@ -722,7 +727,6 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_titl
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_title a {
   color: #007ECA;
-  border-bottom: 1px solid #005e97;
   background: linear-gradient(#ffe503, #ffe503) 0 100%/0 100% no-repeat;
 }
 
@@ -730,7 +734,6 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_titl
   background-size: 100% 100%;
   transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1) 0s;
   color: #005e97;
-  border-bottom: 0px solid;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_paragraph .page_content_part_text {
@@ -746,7 +749,6 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_text
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text a {
   color: #007ECA;
-  border-bottom: 1px solid #005e97;
   background: linear-gradient(#ffe503, #ffe503) 0 100%/0 100% no-repeat;
 }
 
@@ -754,7 +756,6 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_text
   background-size: 100% 100%;
   transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1) 0s;
   color: #005e97;
-  border-bottom: 0px solid;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text.page_content_part_text_option {
