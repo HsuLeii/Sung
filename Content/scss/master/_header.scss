@@ -355,8 +355,8 @@ header {
                             &.dropdown-menu-theme {
                                 flex-direction: row;
                                 justify-content: flex-start;
-                                width: 540px;
-                                max-width: 740px;
+                                width: auto;
+                                max-width: 540px;
                                 overflow-x: scroll;
 
                                 .dropdown-menu-theme-content {
@@ -378,17 +378,43 @@ header {
                                 }
                             }
 
-                            &::after {
-                                content: "";
-                                position: absolute;
-                                width: 0;
-                                height: 0;
-                                right: 0;
-                                top: 0;
-                                transform: translate(-10px, -100%);
-                                border-left: 10px solid transparent;
-                                border-right: 10px solid transparent;
-                                border-bottom: 10px solid $white;
+                            // &::after {
+                            //     content: "";
+                            //     position: absolute;
+                            //     width: 0;
+                            //     height: 0;
+                            //     right: 0;
+                            //     top: 0;
+                            //     transform: translate(-10px, -100%);
+                            //     border-left: 10px solid transparent;
+                            //     border-right: 10px solid transparent;
+                            //     border-bottom: 10px solid $white;
+                            // }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+
+        .navbar {
+
+            .container-fluid {
+
+                .navbar-collapse {
+
+                    .nav-item {
+
+                        .dropdown-menu {
+
+                            &.dropdown-menu-theme {
+                                max-width: 740px;
                             }
                         }
 
@@ -400,6 +426,28 @@ header {
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1400px) {
+    header {
 
-@media screen and (min-width: 1400px) {}
+        .navbar {
+
+            .container-fluid {
+
+                .navbar-collapse {
+
+                    .nav-item {
+
+                        .dropdown-menu {
+
+                            &.dropdown-menu-theme {
+                                max-width: 895px;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,43 +1,48 @@
-main{
-    .title_name{
+main {
+    .title_name {
         display: flex;
         flex-direction: column;
         margin: 0px auto 40px;
-        .name_area{
-            .name_area_content{
+
+        .name_area {
+            .name_area_content {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: baseline;
 
-                .chinese_name{
+                .chinese_name {
                     margin: 0 10px 0 0;
-                    h3{
+
+                    h3 {
                         color: $main_color;
                         font-size: 35px;
-    
-                        span{
+
+                        span {
                             font-size: 21px;
                         }
                     }
                 }
-                .english_name{
-                        span{
-                            font-size: 21px;
-                            color: $main_color;
-                        }
+
+                .english_name {
+                    span {
+                        font-size: 21px;
+                        color: $main_color;
+                    }
                 }
             }
-            .ntnu_name{
+
+            .ntnu_name {
                 margin: 5px 0 0 0px;
             }
         }
-        .photo_area{
+
+        .photo_area {
             margin: 35px 0 0 auto;
             position: relative;
             max-width: 450px;
 
             &::before,
-            &::after{
+            &::after {
                 content: "";
                 position: absolute;
                 border: 2px solid;
@@ -48,37 +53,39 @@ main{
                 border-radius: 50% 0% 0% 0%;
             }
 
-            &::before{
+            &::before {
                 border-color: $main_color_yellow;
-                transform: translate(-10px , -10px);
+                transform: translate(-10px, -10px);
             }
 
-            &::after{
+            &::after {
                 border-color: $main_color;
                 z-index: -1;
-                transform: translate(10px , 10px);
+                transform: translate(10px, 10px);
             }
 
-            .photo_area_img{
+            .photo_area_img {
                 border-radius: 50% 0% 0% 0%;
             }
         }
     }
-    .about_area{
+
+    .about_area {
         margin: 20px auto;
 
-        .about_area_item{
-            .about_area_title{
+        .about_area_item {
+            .about_area_title {
                 margin: 0 0 20px 0;
                 border-bottom: 1px solid $black;
                 padding: 0 0 20px 0;
             }
-    
-            .about_area_content{
+
+            .about_area_content {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                .about_area_content_item{
+
+                .about_area_content_item {
                     background-color: $white;
                     box-shadow: 2px 9px 46px 0px $box_shadow_color;
                     padding: 20px 30px;
@@ -87,78 +94,86 @@ main{
                     align-items: flex-start;
                     flex-direction: column;
                     width: 100%;
-                    .about_index{
 
-                        h3{
+                    .about_index {
+
+                        h3 {
                             font-size: 60px;
                         }
-    
+
                     }
-                    .about_body{
+
+                    .about_body {
                         padding: 10px 0 0;
                         width: 100%;
-    
-                        .about_area_content_title{
+                        border-top: 1px solid $black;
+
+                        .about_area_content_title {
                             margin: 0 0 10px 0;
                         }
-                        
-                        p{
-                            span{
-                                color: $main_color;
-                            }
-                        }
 
-                        .about_body_item{
+                        .about_body_item {
                             display: flex;
-                            margin: 0 0 5px 0;
+                            margin: 0 0 10px 0;
 
-                            .dot_notation{
-                                margin: 0 5px 0 0;
+                            .page_content_part_marker_text {
+                                display: flex;
+                                flex-direction: column;
+
+                                .page_content_part_marker_text_time {
+                                    margin: 0 10px 0 0;
+                                }
+
+                                .page_content_part_marker_text_important{
+                                    color: $main_color;
+                                }
                             }
                         }
                     }
-                    
+
                 }
             }
-            
+
         }
 
-        
+
     }
 }
 
-@media screen and (min-width: 576px) {
-}
+@media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
-    main{
-        .title_name{
+    main {
+        .title_name {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             margin: 0px auto 60px;
 
-            .name_area{
+            .name_area {
                 width: 50%;
                 max-width: calc(100% - 350px);
-                .name_area_content{
-                    .chinese_name{
-                        h3{
+
+                .name_area_content {
+                    .chinese_name {
+                        h3 {
                             font-size: 45px;
                         }
                     }
-                    .english_name{
-                            span{
-                                font-size: 24px;
-                            }
+
+                    .english_name {
+                        span {
+                            font-size: 24px;
+                        }
                     }
                 }
-                .ntnu_name{
+
+                .ntnu_name {
                     margin: 10px 0 0 0px;
                 }
             }
 
-            .photo_area{
+            .photo_area {
                 margin: 0;
                 width: 50%;
                 max-width: 340px;
@@ -168,118 +183,119 @@ main{
 }
 
 @media screen and (min-width: 992px) {
-    main{
-        .title_name{
+    main {
+        .title_name {
             margin: 0px auto 80px;
-            .name_area{
+
+            .name_area {
                 max-width: calc(100% - 450px);
-                .name_area_content{
-                    .chinese_name{
-                        h3{
+
+                .name_area_content {
+                    .chinese_name {
+                        h3 {
                             font-size: 65px;
                         }
                     }
-                    .english_name{
-                            span{
-                                font-size: 30px;
-                            }
+
+                    .english_name {
+                        span {
+                            font-size: 30px;
+                        }
                     }
                 }
             }
-            .photo_area{
+
+            .photo_area {
                 max-width: 450px;
             }
         }
 
-        .about_area{
+        .about_area {
             margin: 20px auto;
-    
-            .about_area_item{
-        
-                .about_area_content{
-                    .about_area_content_item{
-                        width: 45%;
-                        margin: 15px 2.5%;
+
+            .about_area_item {
+
+                .about_area_content {
+                    .about_area_content_item {
+                        margin: 20px 0;
+
+                        .about_body {
+
+                            .about_body_item {
+                                margin: 0 0 20px 0;
+                                .page_content_part_marker_text {
+                                    flex-direction: row;
+
+                                    .page_content_part_marker_text_time {
+                                        margin: 0 20px 0 0;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
-    
-            
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
-    main{
-        .title_name{
+    main {
+        .title_name {
             margin: 0px auto 100px;
             justify-content: center;
-            .name_area{
+
+            .name_area {
                 max-width: calc(100% - 450px);
-                .name_area_content{
-                    .chinese_name{
-                        h3{
+
+                .name_area_content {
+                    .chinese_name {
+                        h3 {
                             font-size: 65px;
                         }
                     }
-                    .english_name{
-                            span{
-                                font-size: 30px;
-                            }
+
+                    .english_name {
+                        span {
+                            font-size: 30px;
+                        }
                     }
                 }
-                .ntnu_name{
+
+                .ntnu_name {
                     margin: 10px 0 0 65px;
                 }
             }
-            .photo_area{
+
+            .photo_area {
                 max-width: 550px;
             }
         }
 
-        .about_area{
-    
-            .about_area_item{
-        
-                .about_area_content{
-                    .about_area_content_item{
-                        
-                        .about_body{
-    
-                            .about_body_item{
-    
-                                .dot_notation{
-                                    margin: 0 10px 0 0;
-                                }
-                            }
-                        }
-                        
-                    }
-                }
-                
-            }
-    
-            
-        }
     }
 }
 
 @media screen and (min-width: 1400px) {
-    main{
-        .about_area{
-    
-            .about_area_item{
-        
-                .about_area_content{
-                        .about_body{
-                            border-top: 1px solid $grey;
+    main {
+
+        .about_area {
+            .about_area_item {
+                .about_area_content {
+                    .about_area_content_item {
+                        &.two_item {
+                            width: 47.5%;
+                            .about_body {
+                                .about_body_item {
+                                    .page_content_part_marker_text {
+                                        flex-direction: column;
+                                    }
+                                }
+                            }
                         }
-                        
                     }
                 }
-                
             }
-    
-            
         }
     }
+
+}

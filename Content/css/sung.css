@@ -620,8 +620,8 @@ header.fixed_header {
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
     flex-direction: row;
     justify-content: flex-start;
-    width: 540px;
-    max-width: 740px;
+    width: auto;
+    max-width: 540px;
     overflow-x: scroll;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme .dropdown-menu-theme-content {
@@ -635,17 +635,17 @@ header.fixed_header {
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme.show {
     display: flex;
   }
-  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: 0;
-    top: 0;
-    transform: translate(-10px, -100%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
+    max-width: 740px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
+    max-width: 895px;
   }
 }
 
@@ -1003,23 +1003,29 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
 main .about_area .about_area_item .about_area_content .about_area_content_item .about_body {
   padding: 10px 0 0;
   width: 100%;
+  border-top: 1px solid #2f2f2f;
 }
 
 main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_area_content_title {
   margin: 0 0 10px 0;
 }
 
-main .about_area .about_area_item .about_area_content .about_area_content_item .about_body p span {
-  color: #007ECA;
-}
-
 main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item {
   display: flex;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
 }
 
-main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .dot_notation {
-  margin: 0 5px 0 0;
+main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .page_content_part_marker_text {
+  display: flex;
+  flex-direction: column;
+}
+
+main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .page_content_part_marker_text .page_content_part_marker_text_time {
+  margin: 0 10px 0 0;
+}
+
+main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .page_content_part_marker_text .page_content_part_marker_text_important {
+  color: #007ECA;
 }
 
 @media screen and (min-width: 768px) {
@@ -1069,8 +1075,16 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
     margin: 20px auto;
   }
   main .about_area .about_area_item .about_area_content .about_area_content_item {
-    width: 45%;
-    margin: 15px 2.5%;
+    margin: 20px 0;
+  }
+  main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item {
+    margin: 0 0 20px 0;
+  }
+  main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .page_content_part_marker_text {
+    flex-direction: row;
+  }
+  main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .page_content_part_marker_text .page_content_part_marker_text_time {
+    margin: 0 20px 0 0;
   }
 }
 
@@ -1094,14 +1108,14 @@ main .about_area .about_area_item .about_area_content .about_area_content_item .
   main .title_name .photo_area {
     max-width: 550px;
   }
-  main .about_area .about_area_item .about_area_content .about_area_content_item .about_body .about_body_item .dot_notation {
-    margin: 0 10px 0 0;
-  }
 }
 
 @media screen and (min-width: 1400px) {
-  main .about_area .about_area_item .about_area_content .about_body {
-    border-top: 1px solid #E5E5E5;
+  main .about_area .about_area_item .about_area_content .about_area_content_item.two_item {
+    width: 47.5%;
+  }
+  main .about_area .about_area_item .about_area_content .about_area_content_item.two_item .about_body .about_body_item .page_content_part_marker_text {
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=sung.css.map */
