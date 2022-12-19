@@ -13,8 +13,19 @@ header {
         padding: 0;
 
         .container-fluid {
-            justify-content: flex-end;
+            padding: 5px 5%;
 
+            .navbar-logo{
+                p{
+                    font-weight: bold;
+                    color: $main_color;
+                }
+            }
+
+            .navbar-brand{
+                position: absolute;
+                left: 0;
+            }
             .navbar-toggler{
                 display: flex;
                 flex-direction: column;
@@ -26,7 +37,7 @@ header {
                     background-image: none;
                     width: 35px;
                     height: 4px;
-                    background-color: $main_color;
+                    background-color: $black;
                     transform-origin: center;
                     transition: all .2s 0s ease;
                     
@@ -288,7 +299,6 @@ header {
         .navbar {
 
             .container-fluid {
-                justify-content: center;
 
                 .navbar-toggler{
                     display: none;
