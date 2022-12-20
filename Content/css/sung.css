@@ -663,6 +663,29 @@ main {
   padding: 40px 0;
 }
 
+main .selectbook * {
+  border-radius: 15px;
+  background-color: #FCFAF7;
+  border-color: #00a7e5;
+}
+
+main option {
+  color: #00a7e5;
+  background-color: #FCFAF7;
+  border-color: #00a7e5;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 17px;
+}
+
+main select:focus, main input[type="text"]:focus, main input[type="password"]:focus {
+  outline: 0;
+  border: 1px solid #00a7e5;
+  color: #00a7e5;
+  box-shadow: 1px 1px 5px #4b4b4b45;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
 main .category_wrap {
   padding: 5px 0 10px;
   margin: 0 auto 20px;
@@ -743,10 +766,19 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_titl
   color: #005e97;
 }
 
+main .page_content_wrap .page_content .page_content_part .filters button {
+  padding: 5px 10px;
+  border: 1px solid #2f2f2f;
+}
+
 main .page_content_wrap .page_content .page_content_part .page_content_paragraph .page_content_part_text {
   display: flex;
   margin: 10px 0;
   text-indent: 0em;
+}
+
+main .page_content_wrap .page_content .page_content_part .page_content_paragraph.filterDivs .hide {
+  display: none;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text {

@@ -4,6 +4,35 @@ main {
     margin: 40px auto;
     padding: 40px 0;
 
+    
+    .selectbook * {
+        border-radius: 15px;
+        background-color: #FCFAF7;
+        border-color: #00a7e5;
+    }
+
+    option {
+        color: #00a7e5;
+        background-color: #FCFAF7;
+        border-color: #00a7e5;
+        border-radius: 10px;
+        padding: 3px 8px;
+        font-size: 17px;
+    }
+    
+    select:focus, input[type="text"]:focus, input[type="password"]:focus {
+        outline: 0;
+        border: 1px solid #00a7e5;
+        color: #00a7e5;
+        -webkit-box-shadow: 1px 1px 5px #4b4b4b45;
+        -moz-box-shadow: 1px 1px 5px #4b4b4b45;
+        box-shadow: 1px 1px 5px #4b4b4b45;
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+
+
     .category_wrap {
         padding: 5px 0 10px;
         margin: 0 auto 20px;
@@ -89,12 +118,24 @@ main {
                     }
                 }
 
+                .filters{
+                    button{
+                        padding: 5px 10px;
+                        border: 1px solid $black;
+                    }
+                }
+
                 .page_content_paragraph {
                     .page_content_part_text {
                         display: flex;
                         margin: 10px 0;
                         text-indent: 0em;
                     }
+                    &.filterDivs{
+                        .hide {
+                          display: none;
+                        }
+                      }
                 }
 
                 .page_content_part_text {
@@ -126,6 +167,13 @@ main {
 
                     }
                     
+
+                    // &.filterDiv{
+                    //     display: none;
+                    //     &.show{
+                    //         display: flex;
+                    //     }
+                    // }
                 }
 
                 .page_content_part_subtitle {

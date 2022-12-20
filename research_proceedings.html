@@ -80,10 +80,35 @@
                     </li>
                   </ul>
             </div>
+
+
+
             <div class="page_content">
                 <div class="page_content_part">
-                    <div class="page_content_paragraph">
-                        <p class="page_content_part_text border_bottom">
+
+                    <div class="form">
+                        <label for="sound">年份選擇</label>
+                        <select name="sound" class="selectbook">
+                            <option value="all-book">全部</option>
+                            <option value="audio-book">有聲書</option>
+                            <option value="silent-book">非有聲書</option>
+                        </select>
+                    </div>
+
+                    <div class="filters">
+                        <button class="filter all active" onclick="filterSelection('all')"><p>所有年份</p></button>
+                        <button class="filter 1998_2000" onclick="filterSelection('1998_2000')"><p>1998年 - 2000年</p></button>
+                        <button class="filter 2001_2005" onclick="filterSelection('2001_2005')"><p>2001年 - 2005年</p></button>
+                        <button class="filter 2006_2010" onclick="filterSelection('2006_2010')"><p>2006年 - 2010年</p></button>
+                        <button class="filter 2011_2015" onclick="filterSelection('2011_2015')"><p>2011年 - 2015年</p></button>
+                        <button class="filter 2016_2020" onclick="filterSelection('2016_2020')"><p>2016年 - 2020年</p></button>
+                        <button class="filter 2021_2022" onclick="filterSelection('2021_2022')"><p>2021年 - 2022年</p></button>
+                      </div>
+        
+                    <div class="page_content_paragraph filterDivs">
+
+                        <!-- 2001 -->
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、林清山、張國恩（2001，6月）。<br />
@@ -92,7 +117,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、林清山、張國恩、李啟龍（2001，10月）。<br />
@@ -100,7 +125,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2002 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、黃嶸生、張國恩（2002，11月）。<br />
@@ -109,7 +136,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、劉佩雲、簡馨瑩（2002，9月）。<br />
@@ -117,7 +144,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 劉佩雲、簡馨瑩、宋曜廷、程炳林（2002，11月）。<br />
@@ -125,7 +152,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2006 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷（2006，4月）。<br />
@@ -134,7 +163,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 侯惠澤、宋曜廷、陳平福、張國恩（2006，5月）。<br />
@@ -142,7 +171,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 陳裕隆、宋曜廷、林合彥、張國恩（2006，5月）。<br />
@@ -150,7 +179,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2007 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 毛國楠、宋曜廷、張國恩、劉俊廷、蘇漢哲（2007，11月）。<br />
@@ -158,7 +189,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、曾芬蘭、陳欣宜、邱佳民（2007，10月）。<br />
@@ -166,7 +197,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2008 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、張國恩（2008，11月）。<br />
@@ -175,7 +208,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2009 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、趙子揚、陳奕蒲（2009，10月）。<br />
@@ -183,7 +218,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 李奕璇、宋曜廷（2009，9月）。<br />
@@ -191,7 +226,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2011 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、洪榮昭、陳柏熹、蕭顯勝、鄭育文（2011，3月）。<br />
@@ -200,7 +237,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、張道行、陳茹玲、李宜憲（2011）。<br />
@@ -210,7 +247,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 宋曜廷、趙子揚、王雅鈴、黃瓅瑩、陳佳蓉、曾芬蘭(2011)。<br />
@@ -218,7 +255,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 趙子揚、王雅鈴、宋曜廷(2011)。<br />
@@ -226,7 +263,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 趙子揚、陳珈文、宋曜廷(2011)。<br />
@@ -234,7 +271,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2012 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 李垚暾、詹雅婷、李宜憲、張道行、宋曜廷。（2012，10月）。<br />
@@ -242,7 +281,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 林維駿、陳茹玲、宋曜廷（2012）。<br />
@@ -250,7 +289,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 洪嘉馡、陳浩然、宋曜廷、張國恩（2012）。<br />
@@ -258,7 +297,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 洪嘉馡、曾厚強、李宜憲、宋曜廷（2012）。<br />
@@ -266,7 +305,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 張道行、宋曜廷、李垚暾、謝冠生（2012）。<br />
@@ -274,7 +313,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 陳茹玲、查日龢、張道行、宋曜廷、謝冠生（2012）。<br />
@@ -282,7 +321,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 曾厚強、張道行、宋曜廷（2012，10月）。<br />
@@ -290,7 +329,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 趙子揚、宋曜廷(2012)。<br />
@@ -298,7 +337,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 蔡鑫廷、陳茹玲、宋曜廷（2012，10月）。<br />
@@ -306,7 +345,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 蕭孟莛、趙子揚、陳柏熹、蔡順良、宋曜廷(2012)。<br />
@@ -314,7 +353,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 簡馨瑩、趙子揚、宋曜廷、王繼伶(2012)。<br />
@@ -322,7 +361,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 簡馨瑩、趙子揚、連啟舜、宋曜廷(2012)。<br />
@@ -330,7 +369,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2013 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 洪嘉馡、宋曜廷、鄭錦全(2013)。<br />
@@ -338,7 +379,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 鄭育文、陳信豪、宋曜廷（2013年10月）。<br />
@@ -346,7 +387,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 薛人華、鄭育文、宋曜廷（2013年10月）。<br />
@@ -354,7 +395,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 1998 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 1998_2000">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, T. C. ( Y. T.), Chen, S. F., & Chang, K.E. (1998).<br />
@@ -363,7 +406,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2000 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 1998_2000">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T. ( T. C.), Chen, I. D., & Chang, K.E. (2000).<br />
@@ -373,7 +418,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2001 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chiou, S. K., & Chang, K. E. (2001).<br />
@@ -382,7 +429,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Hou, H. T., & Chang, K. E. (2001). <br />
@@ -392,7 +439,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2002 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., & Lee, C. L. (2002). <br />
@@ -402,7 +451,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Huang, J. S., & Chang, K. E. (2002). <br />
@@ -412,7 +461,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2003 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., & Chang, K. E. (2003). <br />
@@ -422,7 +473,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chiou, S. K., Ho. H. T., & Chang, K. E. (2003). <br />
@@ -433,7 +484,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Hwang, R. S., Su, Y. F., & Chang, K. E. (2003). <br />
@@ -443,7 +494,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Lin, C. S., Chiou, S. K., & Chang, K. E (2003). <br />
@@ -454,7 +505,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2004 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Lee, M. D., & Chang, K. E. (2004). <br />
@@ -464,7 +517,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., & Chang, T. H. (2004). <br />
@@ -474,7 +527,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2005 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T. (2005). <br />
@@ -484,7 +539,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., & Chang, K. E. (2005). <br />
@@ -494,7 +549,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., & Chang, K. E. (2005). <br />
@@ -504,7 +559,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., & Lee, M. D. (2005). <br />
@@ -514,7 +569,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., & Lin, H. Y. (2005). <br />
@@ -524,7 +579,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2001_2005">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Lan, P. C., & Chang, K. E. (2005). <br />
@@ -534,7 +589,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2006 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., & Chang, K. E. (2006). <br />
@@ -544,7 +601,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Huang, C. C., & Chang, K. E. (2006). <br />
@@ -554,7 +611,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2007 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., & Chang, K. E. (2007). <br />
@@ -564,7 +623,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., & Wu, L. J. (2007). <br />
@@ -574,7 +633,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., Mao, Liu, T. T., & Su, H. T. (2007). <br />
@@ -584,7 +643,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Lee, Y. S., & Chang, K. E. (2007). <br />
@@ -594,7 +653,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2008 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2006_2010">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Chang, K. E., Lee, Y. S., & Cheng, P. F. (2008). <br />
@@ -604,7 +665,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2011 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y.-T., Chang, T.H., Chen, J.-L., Cha, J.-H., Huang, C.-H., Hu, M.-K., &; Hsu,
@@ -615,7 +678,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2012 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chang, T. H., Sung, Y. T., & Lee, Y. T. (2012, November). <br />
@@ -625,7 +690,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chang, Y. T., & Sung, Y. T. (2012). <br />
@@ -635,7 +700,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chao, T. Y., Wang, Y. L., & Sung, Y. T. (2012). <br />
@@ -645,7 +710,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chen, J.-L., Cha, J.-H., Chang, T.-H., Sung, Y.-T., & Hsieh, K.-S. (2012, Nov). <br />
@@ -654,7 +719,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chen, J.-L., Sung, Y. T.,Tasi, S.-T.,Chen J.-G.,Wu, M. D.(2012, July). <br />
@@ -664,8 +729,7 @@
                             </span>
                         </p>
 
-
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chen, J.-L., Tseng,H.-C. Cha,J.-H.,Chang, T.-H.,Sung, Y.-T.(2012, May) .<br />
@@ -676,7 +740,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hong, J. F., Sung, Y. T., & Chang K. E. (2012, Aug). <br />
@@ -686,7 +750,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hong, J. F., Tseng, H. C., Li, Y. S., & Sung, Y.T. (2012, Nov). <br />
@@ -696,7 +760,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hsueh, J. H., Cheng, Y. W., & Sung, Y. T. (2012).<br />
@@ -706,7 +770,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Lee, Y.-S., Chen, J.-L., Chang, T.-H., Chang, K.-E., Chen, H.-C., & Sung, Y.-T.(2012,
@@ -717,7 +781,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Lee, Y.-S., Tseng, H.-C., Chen, J.-L., Peng, C.-Y. Chang, T.-H., Sung, Y.-T. (2012,
@@ -728,7 +792,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Lin, W. C., Chen, J. L., & Sung, Y. T. (2012, November).<br />
@@ -738,7 +802,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Lin, W.-C., Chen, J.-L., Sung, Y.-T. (2012, Nov) .<br />
@@ -748,7 +812,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Peng, C. Y., Chen, J. L., Wu, M. D., Tsai, S. T., & Sung, Y. T. (2012, October).<br />
@@ -757,7 +821,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T. , &Cheng, Y. W. (2012).<br />
@@ -766,7 +830,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Tien, H. L., & Cheng, Y. W.(2012).<br />
@@ -776,7 +840,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung,Y. T., Chen, J.-L., Lee,Y. T., Lee, Y.-S., Peng, C.-Y., Tseng, H.-C., Chang, T.-H.
@@ -787,7 +851,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Tseng, H.-C., Chang, T.-H., Sung, Y.-T. (2012, Nov).<br />
@@ -797,7 +861,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Wu, L. J., Chang,K. E., & Sung, Y. T.(2012).<br />
@@ -807,7 +871,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Wu, L. J., Lai, S. C., Chang, K. E., Sung, Y. T., & Hsiao,H. S.(2012).<br />
@@ -816,7 +880,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2013 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chao, T. Y., & Sung, Y. T. (2013).<br />
@@ -826,7 +892,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chen, J. L., Cha, J. H., Wu, M. D., Tsai, S. T., Lin, W. C., Sung, Y. T. (2013,
@@ -837,7 +903,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hong, Jia-Fei, Yao-Ting Sung and Kuo-En Chang. 2013.<br />
@@ -847,7 +913,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hong, Jia-Fei, Yu-Jia Chen, Ju-Ling Chen, Wei-Chun Lin and Yao-Ting Sung. 2013.<br />
@@ -857,7 +923,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Lin, W. C., Chen, J. L., Cee, Y. T., Chen, J. L., Sung, Y. T. (2013, July).<br />
@@ -867,7 +933,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T., Lin, W. C., Cha, J. H., Chen, J. L. (2013, August).<br />
@@ -877,7 +943,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2014 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chao, T. Y., & Sung, Y. T. (2014).<br />
@@ -887,7 +955,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hsieh, K. S., Lin, W. C., Dyson, S. B., Liu, P. C., & Sung, Y. T. (2014, April).<br />
@@ -897,7 +965,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Tseng, H. C., Chang, T. H., Chen, B. L. & Sung, Y. T. (2014, April).<br />
@@ -906,7 +974,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2015 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Cheng, T. Y., Chang, Y. T., Sung, Y. T., Chen, Y. F.(2015, September).<br />
@@ -916,7 +986,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Hsiao, M. T., Hsueh, J. H., Sung, Y. T., Liu, H. L. (2015, September).<br />
@@ -925,7 +995,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y.T.,Huang, Y.M., Lan, Y.J., Liu, T.C.,Chang, K.E., Chen, H.C., Hsiao, H.Sheng.
@@ -936,7 +1006,7 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <p class="page_content_part_text border_bottom filterDiv 2011_2015">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Wu,J.S., Cheng,T.Y., Sung,Y.T., Tsai,J.R., Li,K.L. (2015, September).<br />
@@ -945,7 +1015,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2016 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2016_2020">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y.T., Yang,J.M., Lee, H.Y. (2016,July).<br />
@@ -955,7 +1027,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2017 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2016_2020">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y.T., Yang,J.M., Lee, H.Y.(2017,July).<br />
@@ -964,7 +1038,9 @@
                             </span>
                         </p>
 
-                        <p class="page_content_part_text border_bottom">
+                        <!-- 2022 -->
+
+                        <p class="page_content_part_text border_bottom filterDiv 2021_2022">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chia-Yueh Chang, Yen-Cheng Chen, Meng-Ning Tsai, Yao-Ting SUNG, Yu-Lin Chang, Shu-Yen
@@ -1036,6 +1112,77 @@
         });
         //scroll-top 按鈕結束
     </script>
+
+<script>
+    filterSelection('all');
+function filterSelection(f){
+  var newActiveFilter=$(".filters ."+f);
+  if(newActiveFilter.hasClass('active')){
+    //do nothing
+  } else {
+    //update filter
+    $('.active').removeClass('active');
+    newActiveFilter.addClass('active');
+    
+    //apply filter
+    if(f=='all'){
+      $('.filterDivs').children().removeClass('hide');
+    } else {
+     $('.filterDivs').children("."+f).removeClass('hide');
+     $('.filterDivs').children().not("."+f).addClass('hide');
+    }
+  }
+}
+
+</script>
+
+    <!-- 最終挑戰選擇器 -->
+    <!-- <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btns = document.getElementsByClassName("sky_answer_btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script> -->
+
 </body>
 
 </html>
