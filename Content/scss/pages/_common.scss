@@ -4,7 +4,7 @@ main {
     margin: 40px auto;
     padding: 40px 0;
 
-    
+
     .category_wrap {
         padding: 5px 0 10px;
         margin: 0 auto 20px;
@@ -91,20 +91,28 @@ main {
                     }
                 }
 
-                .select_area{
+                .select_area {
                     display: flex;
                     align-items: center;
-                    .select_title{
+
+                    .select_title {
                         margin: 0 10px 0 0;
                     }
+
                     .select {
                         position: relative;
-                        width: 200px;
+                        width: 180px;
                         border: 1px solid $black;
                         border-radius: 5px;
                         padding: 3px 10px;
                         cursor: pointer;
-                
+
+                        .selected {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+
                         .filters {
                             display: none;
                             position: absolute;
@@ -114,30 +122,57 @@ main {
                             background-color: $body_bg;
                             border: 1px solid $main_color;
                             border-radius: 5px;
-            
-                            button {
+                            overflow: hidden;
+
+                            .filter_btn {
                                 padding: 5px 10px;
                                 color: $main_color;
                                 width: 100%;
                                 text-align: left;
                                 border-radius: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
 
-                                &:hover{
+                                p {
+                                    color: $main_color;
+                                }
+
+                                span {
+                                    display: none;
+                                }
+
+                                &.active,
+                                &:hover {
                                     background-color: $main_color_yellow;
                                 }
+
+                                &.active {
+                                    span {
+                                        display: block;
+                                    }
+                                }
                             }
-                            
+
+                            &.open {
+                                display: block;
+                            }
                         }
-                
+
                         &.active,
                         &:hover {
                             border: 1px solid $main_color;
-                            p{
+
+                            .selected {
                                 color: $main_color;
+
+                                p {
+                                    color: $main_color;
+                                }
                             }
                         }
                     }
-                }            
+                }
 
                 .page_content_paragraph {
                     .page_content_part_text {
@@ -181,14 +216,6 @@ main {
                         }
 
                     }
-
-
-                    // &.filterDiv{
-                    //     display: none;
-                    //     &.show{
-                    //         display: flex;
-                    //     }
-                    // }
                 }
 
                 .page_content_part_subtitle {
@@ -227,7 +254,7 @@ main {
                     .both_menu_title {
                         width: 100%;
                         border-bottom: 1px solid $black;
-                        padding: 10px 0;
+                        padding: 0 0 10px;
                         margin: 0 0 10px;
 
                         h4 {
@@ -365,6 +392,12 @@ main {
                         margin: 0 0 20px;
                     }
 
+                    .select_area {    
+                        .select {
+                            width: 230px;
+                        }
+                    }
+
                     .page_content_part_text {
                         padding: 20px 0;
                     }
@@ -433,6 +466,12 @@ main {
                         margin: 0 0 20px;
                     }
 
+                    .select_area {    
+                        .select {
+                            width: 250px;
+                        }
+                    }
+
                     .page_content_part_text {
                         padding: 20px 0;
                     }
@@ -460,7 +499,7 @@ main {
                             width: 100%;
                             color: $main_color;
                             border-bottom: 1px solid $black;
-                            padding: 20px 0;
+                            padding: 0 0 20px;
                             margin: 0 0 20px;
                         }
 

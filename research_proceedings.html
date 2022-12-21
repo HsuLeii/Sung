@@ -96,34 +96,57 @@
                                 <p>
                                     所有年份
                                 </p>
+                                <span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
                             </div>
 
                             <div class="filters">
-                                <button class="all active" onclick="filterSelection('all')">
+                                <button class="all filter_btn active" onclick="filterSelection('all')">
                                     <p>所有年份</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="1998_2000" onclick="filterSelection('1998_2000')">
-                                    <p>1998年 - 2000年</p>
+                                <button class="1996_2000 filter_btn" onclick="filterSelection('1996_2000')">
+                                    <p>1996年 - 2000年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="2001_2005" onclick="filterSelection('2001_2005')">
+                                <button class="2001_2005 filter_btn" onclick="filterSelection('2001_2005')">
                                     <p>2001年 - 2005年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="2006_2010" onclick="filterSelection('2006_2010')">
+                                <button class="2006_2010 filter_btn" onclick="filterSelection('2006_2010')">
                                     <p>2006年 - 2010年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="2011_2015" onclick="filterSelection('2011_2015')">
+                                <button class="2011_2015 filter_btn" onclick="filterSelection('2011_2015')">
                                     <p>2011年 - 2015年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="2016_2020" onclick="filterSelection('2016_2020')">
+                                <button class="2016_2020 filter_btn" onclick="filterSelection('2016_2020')">
                                     <p>2016年 - 2020年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
-                                <button class="2021_2022" onclick="filterSelection('2021_2022')">
+                                <button class="2021_2025 filter_btn" onclick="filterSelection('2021_2025')">
                                     <p>2021年 - 2022年</p>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </span>
                                 </button>
                             </div>
                         </div>
                     </div>
-
 
                     <div class="page_content_paragraph filterDivs">
 
@@ -417,7 +440,7 @@
 
                         <!-- 1998 -->
 
-                        <p class="page_content_part_text border_bottom filterDiv 1998_2000">
+                        <p class="page_content_part_text border_bottom filterDiv 1996_2000">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, T. C. ( Y. T.), Chen, S. F., & Chang, K.E. (1998).<br />
@@ -428,7 +451,7 @@
 
                         <!-- 2000 -->
 
-                        <p class="page_content_part_text border_bottom filterDiv 1998_2000">
+                        <p class="page_content_part_text border_bottom filterDiv 1996_2000">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Sung, Y. T. ( T. C.), Chen, I. D., & Chang, K.E. (2000).<br />
@@ -1060,7 +1083,7 @@
 
                         <!-- 2022 -->
 
-                        <p class="page_content_part_text border_bottom filterDiv 2021_2022">
+                        <p class="page_content_part_text border_bottom filterDiv 2021_2025">
                             <span class="page_content_part_marker"></span>
                             <span class="page_content_part_marker_text">
                                 Chia-Yueh Chang, Yen-Cheng Chen, Meng-Ning Tsai, Yao-Ting SUNG, Yu-Lin Chang, Shu-Yen
@@ -1109,10 +1132,8 @@
                     $("header").removeClass("fixed_header");
                 }
             });
-        });
 
-        //scroll-top 按鈕開始
-        $(document).ready(function () {
+            //scroll-top 按鈕開始
             $(".scroll_top").hide();
             $(window).scroll(function () {
                 var windowTop = $(window).scrollTop();
@@ -1128,23 +1149,27 @@
                     scrollTop: 0
                 }, 200);
             });
-        });
-        //scroll-top 按鈕結束
+            //scroll-top 按鈕結束
 
-        $(document).ready(function () {
+            //select 年份選擇開始
             $(".select").click(function () {
-                $(this).children(".filters").toggle();
-                $(this).addClass("active");
+                $(this).children(".filters").toggleClass("open");
+                if ($(".filters").hasClass("open")) {
+                    $(".select").addClass("active");
+                } else {
+                    $(".select").removeClass("active");
+                }
             });
 
-            $(".filters").children("button").click(function () {
+            $(".filter_btn").click(function () {
                 var text = $(this).children("p").html();
                 $(".selected").children("p").text(text);
-
             });
+        //select 年份選擇結束
         });
     </script>
 
+    <!-- filter 年份選擇開始 -->
     <script>
         filterSelection('all');
 
@@ -1154,7 +1179,7 @@
                 //do nothing
             } else {
                 //update filter
-                $('.active').removeClass('active');
+                $('.filter_btn').removeClass('active');
                 newActiveFilter.addClass('active');
 
                 //apply filter
@@ -1167,6 +1192,7 @@
             }
         }
     </script>
+    <!-- filter 年份選擇開始 -->
 
 </body>
 
