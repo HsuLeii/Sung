@@ -60,7 +60,7 @@
             <div class="both_menu">
                 <ul>
                     <div class="both_menu_title">
-                        <h4>學術著作</h4> 
+                        <h4>學術著作</h4>
                     </div>
                     <li>
                         <a class="both_menu_link" href="research_papers.html">期刊論文
@@ -78,33 +78,53 @@
                         <a class="both_menu_link" href="research_quizTool.html">測驗評量工具
                         </a>
                     </li>
-                  </ul>
+                </ul>
             </div>
-
-
 
             <div class="page_content">
                 <div class="page_content_part">
 
-                    <div class="form">
-                        <label for="sound">年份選擇</label>
-                        <select name="sound" class="selectbook">
-                            <option value="all-book">全部</option>
-                            <option value="audio-book">有聲書</option>
-                            <option value="silent-book">非有聲書</option>
-                        </select>
+                    <div class="select_area">
+                        <div class="select_title">
+                            <p>
+                                年份選擇
+                            </p>
+                        </div>
+
+                        <div class="select">
+                            <div class="selected">
+                                <p>
+                                    所有年份
+                                </p>
+                            </div>
+
+                            <div class="filters">
+                                <button class="all active" onclick="filterSelection('all')">
+                                    <p>所有年份</p>
+                                </button>
+                                <button class="1998_2000" onclick="filterSelection('1998_2000')">
+                                    <p>1998年 - 2000年</p>
+                                </button>
+                                <button class="2001_2005" onclick="filterSelection('2001_2005')">
+                                    <p>2001年 - 2005年</p>
+                                </button>
+                                <button class="2006_2010" onclick="filterSelection('2006_2010')">
+                                    <p>2006年 - 2010年</p>
+                                </button>
+                                <button class="2011_2015" onclick="filterSelection('2011_2015')">
+                                    <p>2011年 - 2015年</p>
+                                </button>
+                                <button class="2016_2020" onclick="filterSelection('2016_2020')">
+                                    <p>2016年 - 2020年</p>
+                                </button>
+                                <button class="2021_2022" onclick="filterSelection('2021_2022')">
+                                    <p>2021年 - 2022年</p>
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="filters">
-                        <button class="filter all active" onclick="filterSelection('all')"><p>所有年份</p></button>
-                        <button class="filter 1998_2000" onclick="filterSelection('1998_2000')"><p>1998年 - 2000年</p></button>
-                        <button class="filter 2001_2005" onclick="filterSelection('2001_2005')"><p>2001年 - 2005年</p></button>
-                        <button class="filter 2006_2010" onclick="filterSelection('2006_2010')"><p>2006年 - 2010年</p></button>
-                        <button class="filter 2011_2015" onclick="filterSelection('2011_2015')"><p>2011年 - 2015年</p></button>
-                        <button class="filter 2016_2020" onclick="filterSelection('2016_2020')"><p>2016年 - 2020年</p></button>
-                        <button class="filter 2021_2022" onclick="filterSelection('2021_2022')"><p>2021年 - 2022年</p></button>
-                      </div>
-        
+
                     <div class="page_content_paragraph filterDivs">
 
                         <!-- 2001 -->
@@ -1089,7 +1109,6 @@
                     $("header").removeClass("fixed_header");
                 }
             });
-
         });
 
         //scroll-top 按鈕開始
@@ -1111,77 +1130,43 @@
             });
         });
         //scroll-top 按鈕結束
+
+        $(document).ready(function () {
+            $(".select").click(function () {
+                $(this).children(".filters").toggle();
+                $(this).addClass("active");
+            });
+
+            $(".filters").children("button").click(function () {
+                var text = $(this).children("p").html();
+                $(".selected").children("p").text(text);
+
+            });
+        });
     </script>
 
-<script>
-    filterSelection('all');
-function filterSelection(f){
-  var newActiveFilter=$(".filters ."+f);
-  if(newActiveFilter.hasClass('active')){
-    //do nothing
-  } else {
-    //update filter
-    $('.active').removeClass('active');
-    newActiveFilter.addClass('active');
-    
-    //apply filter
-    if(f=='all'){
-      $('.filterDivs').children().removeClass('hide');
-    } else {
-     $('.filterDivs').children("."+f).removeClass('hide');
-     $('.filterDivs').children().not("."+f).addClass('hide');
-    }
-  }
-}
+    <script>
+        filterSelection('all');
 
-</script>
+        function filterSelection(f) {
+            var newActiveFilter = $(".filters ." + f);
+            if (newActiveFilter.hasClass('active')) {
+                //do nothing
+            } else {
+                //update filter
+                $('.active').removeClass('active');
+                newActiveFilter.addClass('active');
 
-    <!-- 最終挑戰選擇器 -->
-    <!-- <script>
-        filterSelection("all")
-
-        function filterSelection(c) {
-            var x, i;
-            x = document.getElementsByClassName("filterDiv");
-
-            for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-            }
-        }
-
-        function w3AddClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {
-                    element.className += " " + arr2[i];
+                //apply filter
+                if (f == 'all') {
+                    $('.filterDivs').children().removeClass('hide');
+                } else {
+                    $('.filterDivs').children("." + f).removeClass('hide');
+                    $('.filterDivs').children().not("." + f).addClass('hide');
                 }
             }
         }
-
-        function w3RemoveClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                    arr1.splice(arr1.indexOf(arr2[i]), 1);
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
-        var btns = document.getElementsByClassName("sky_answer_btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script> -->
+    </script>
 
 </body>
 
