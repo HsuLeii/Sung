@@ -892,7 +892,7 @@ main .page_content_wrap.page_content_wrap_both {
 
 main .page_content_wrap.page_content_wrap_both .both_menu {
   width: 100%;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
 }
 
 main .page_content_wrap.page_content_wrap_both .both_menu ul {
@@ -903,7 +903,7 @@ main .page_content_wrap.page_content_wrap_both .both_menu ul {
 main .page_content_wrap.page_content_wrap_both .both_menu ul .both_menu_title {
   width: 100%;
   border-bottom: 1px solid #2f2f2f;
-  padding: 0 0 10px;
+  padding: 10px 0;
   margin: 0 0 10px;
 }
 
@@ -923,10 +923,6 @@ main .page_content_wrap.page_content_wrap_both .both_menu ul li {
 main .page_content_wrap.page_content_wrap_both .both_menu ul li:nth-child(2) {
   border-left: 0px;
   padding: 0 10px 0 0;
-}
-
-main .page_content_wrap.page_content_wrap_both .page_content .page_content_part {
-  margin: 20px auto 40px;
 }
 
 main .page_content_part_marker {
@@ -1002,9 +998,6 @@ main .scroll_top:hover .scroll_top_border {
   main .page_content_wrap .page_content .page_content_img {
     margin: 10px auto 40px;
   }
-  main .page_content_wrap .page_content .page_content_part {
-    margin: 60px auto;
-  }
   main .page_content_wrap .page_content .page_content_part .page_content_part_title {
     padding: 0 0 20px;
     margin: 0 0 20px;
@@ -1017,9 +1010,6 @@ main .scroll_top:hover .scroll_top_border {
   }
   main .page_content_wrap .page_content .page_content_part .page_content_part_subtitle_content {
     margin: 0 0 20px calc(1rem + 3px);
-  }
-  main .page_content_wrap.page_content_wrap_both .both_menu {
-    margin: 60px auto 0;
   }
   main .page_content_part_marker::after {
     top: calc(15px * 0.85);
@@ -1049,7 +1039,7 @@ main .scroll_top:hover .scroll_top_border {
     margin: 10px auto 40px;
   }
   main .page_content_wrap .page_content .page_content_part {
-    margin: 60px auto;
+    margin: 40px auto;
   }
   main .page_content_wrap .page_content .page_content_part .page_content_part_title {
     padding: 0 0 20px;
@@ -1070,7 +1060,7 @@ main .scroll_top:hover .scroll_top_border {
   }
   main .page_content_wrap.page_content_wrap_both .both_menu {
     width: 20%;
-    margin: 60px 0 0;
+    margin: 40px 0 0;
   }
   main .page_content_wrap.page_content_wrap_both .both_menu ul {
     position: sticky;
@@ -1081,7 +1071,7 @@ main .scroll_top:hover .scroll_top_border {
     width: 100%;
     color: #007ECA;
     border-bottom: 1px solid #2f2f2f;
-    padding: 0 0 20px;
+    padding: 20px 0;
     margin: 0 0 20px;
   }
   main .page_content_wrap.page_content_wrap_both .both_menu ul li {
@@ -1094,9 +1084,6 @@ main .scroll_top:hover .scroll_top_border {
   }
   main .page_content_wrap.page_content_wrap_both .page_content {
     width: 75%;
-  }
-  main .page_content_wrap.page_content_wrap_both .page_content .page_content_part {
-    margin: 60px auto;
   }
   main .page_content_part_marker::after {
     top: calc(19px * 0.85);

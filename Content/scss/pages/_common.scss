@@ -245,7 +245,7 @@ main {
 
             .both_menu {
                 width: 100%;
-                margin: 40px auto 0;
+                margin: 20px auto 0;
 
                 ul {
                     display: flex;
@@ -254,7 +254,7 @@ main {
                     .both_menu_title {
                         width: 100%;
                         border-bottom: 1px solid $black;
-                        padding: 0 0 10px;
+                        padding: 10px 0;
                         margin: 0 0 10px;
 
                         h4 {
@@ -280,12 +280,6 @@ main {
                         }
                     }
 
-                }
-            }
-
-            .page_content {
-                .page_content_part {
-                    margin: 20px auto 40px;
                 }
             }
         }
@@ -385,7 +379,6 @@ main {
                 }
 
                 .page_content_part {
-                    margin: 60px auto;
 
                     .page_content_part_title {
                         padding: 0 0 20px;
@@ -405,12 +398,6 @@ main {
                     .page_content_part_subtitle_content {
                         margin: 0 0 20px calc(1rem + 3px);
                     }
-                }
-            }
-
-            &.page_content_wrap_both {
-                .both_menu {
-                    margin: 60px auto 0;
                 }
             }
 
@@ -459,7 +446,7 @@ main {
                 }
 
                 .page_content_part {
-                    margin: 60px auto;
+                    margin: 40px auto;
 
                     .page_content_part_title {
                         padding: 0 0 20px;
@@ -488,7 +475,7 @@ main {
 
                 .both_menu {
                     width: 20%;
-                    margin: 60px 0 0;
+                    margin: 40px 0 0;
 
                     ul {
                         position: sticky;
@@ -499,7 +486,7 @@ main {
                             width: 100%;
                             color: $main_color;
                             border-bottom: 1px solid $black;
-                            padding: 0 0 20px;
+                            padding: 20px 0;
                             margin: 0 0 20px;
                         }
 
@@ -518,10 +505,6 @@ main {
 
                 .page_content {
                     width: 75%;
-
-                    .page_content_part {
-                        margin: 60px auto;
-                    }
                 }
             }
 
