@@ -311,7 +311,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -327,9 +326,19 @@ header .navbar .container-fluid {
   padding: 5px 5%;
 }
 
+header .navbar .container-fluid .navbar-logo {
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+}
+
+header .navbar .container-fluid .navbar-logo img {
+  width: 50%;
+}
+
 header .navbar .container-fluid .navbar-logo p {
   font-weight: bold;
-  color: #007ECA;
+  color: #2f2f2f;
 }
 
 header .navbar .container-fluid .navbar-brand {
@@ -576,6 +585,7 @@ header .navbar .container-fluid .navbar-collapse .nav-item .dropdownBg {
 header.fixed_header {
   border-bottom: 1.5px solid #007ECA;
   box-shadow: 2px 9px 46px 0px #2f2f2f1f;
+  position: fixed;
 }
 
 @media screen and (min-width: 576px) {
@@ -586,7 +596,10 @@ header.fixed_header {
 
 @media screen and (min-width: 992px) {
   header {
-    padding: 0px 2.5%;
+    padding: 0px;
+  }
+  header .navbar .container-fluid .navbar-logo {
+    max-width: 400px;
   }
   header .navbar .container-fluid .navbar-toggler {
     display: none;
@@ -607,7 +620,7 @@ header.fixed_header {
     border-bottom: 0px;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .nav-link {
-    margin: 20px 20px 0;
+    margin: 20px 15px 0;
     padding: 0 5px 20px;
   }
   header .navbar .container-fluid .navbar-collapse .nav-item .nav-link:hover {
@@ -655,6 +668,9 @@ header.fixed_header {
 }
 
 @media screen and (min-width: 1200px) {
+  header .navbar .container-fluid .navbar-logo {
+    max-width: 450px;
+  }
   header .navbar .container-fluid .navbar-collapse .nav-item .dropdown-menu.dropdown-menu-theme {
     max-width: 740px;
   }

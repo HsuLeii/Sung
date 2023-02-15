@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
     top: 0;
     z-index: 1;
@@ -16,9 +15,15 @@ header {
             padding: 5px 5%;
 
             .navbar-logo{
+                display: flex;
+                align-items: center;
+                max-width: 350px;
+                img{
+                    width: 50%;
+                }
                 p{
                     font-weight: bold;
-                    color: $main_color;
+                    color: $black;
                 }
             }
 
@@ -271,6 +276,7 @@ header {
     &.fixed_header{
         border-bottom: 1.5px solid $main_color;
         box-shadow: 2px 9px 46px 0px $box_shadow_color;
+        position: fixed;
     }
 }
 
@@ -294,11 +300,15 @@ header {
 
 @media screen and (min-width: 992px) {
     header {
-        padding: 0px 2.5%;
+        padding: 0px;
 
         .navbar {
 
             .container-fluid {
+
+                .navbar-logo{
+                    max-width: 400px;
+                }
 
                 .navbar-toggler{
                     display: none;
@@ -321,7 +331,7 @@ header {
                         border-bottom: 0px;
 
                         .nav-link {
-                            margin: 20px 20px 0;
+                            margin: 20px 15px 0;
                             padding: 0 5px 20px;
 
                             &:hover{
@@ -416,6 +426,9 @@ header {
         .navbar {
 
             .container-fluid {
+                .navbar-logo{
+                    max-width: 450px;
+                }
 
                 .navbar-collapse {
 
