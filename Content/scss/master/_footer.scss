@@ -1,0 +1,24 @@
+footer{
+    background-color: $black;
+    padding: 20px 10%;
+    .footer_area{
+        .footer_logo{
+            width: 40%;
+            max-width: 450px;
+        }
+        .footer_information{
+            margin: 40px 0;
+            .footer_information_text{
+                color: $white;
+                a{
+                    color: $white;
+                }
+            }
+        }
+        .footer_copyright{
+            .footer_copyright{
+                color: $white;
+            }
+        }
+    }
+}
