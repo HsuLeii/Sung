@@ -1,74 +1,4 @@
 main {
-    .title_name {
-        display: flex;
-        flex-direction: column;
-        margin: 0px auto 40px;
-
-        .name_area {
-            .name_area_content {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: baseline;
-
-                .chinese_name {
-                    margin: 0 10px 0 0;
-
-                    h3 {
-                        color: $main_color;
-                        font-size: 35px;
-
-                        span {
-                            font-size: 21px;
-                        }
-                    }
-                }
-
-                .english_name {
-                    span {
-                        font-size: 21px;
-                        color: $main_color;
-                    }
-                }
-            }
-
-            .ntnu_name {
-                margin: 5px 0 0 0px;
-            }
-        }
-
-        .photo_area {
-            margin: 35px 0 0 auto;
-            position: relative;
-            max-width: 450px;
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                border: 2px solid;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 50% 0% 0% 0%;
-            }
-
-            &::before {
-                border-color: $main_color_yellow;
-                transform: translate(-10px, -10px);
-            }
-
-            &::after {
-                border-color: $main_color;
-                z-index: -1;
-                transform: translate(10px, 10px);
-            }
-
-            .photo_area_img {
-                border-radius: 50% 0% 0% 0%;
-            }
-        }
-    }
 
     .about_area {
         margin: 20px auto;
@@ -96,21 +26,28 @@ main {
                     width: 100%;
 
                     .about_index {
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+                        width: 100%;
+                        padding: 0 0 20px;
 
                         h3 {
                             font-size: 60px;
+                            line-height: 1;
+                        }
+
+                        h4 {
+                            line-height: 1;
+                            color: $main_color;
                         }
 
                     }
 
                     .about_body {
-                        padding: 10px 0 0;
+                        padding: 20px 0 0;
                         width: 100%;
                         border-top: 1px solid $black;
-
-                        .about_area_content_title {
-                            margin: 0 0 10px 0;
-                        }
 
                         .about_body_item {
                             display: flex;
@@ -125,10 +62,83 @@ main {
                                 }
 
                                 .page_content_part_marker_text_important{
-                                    color: $main_color;
+                                    color: $black;
                                 }
                             }
                         }
+
+                        .about_body_table{
+                            overflow-x: scroll;
+                            table { 
+                                width: 100%; 
+                                min-width: 1050px;
+                                border-collapse: collapse; 
+                                thead{
+                                    tr{
+                                        th{
+                                            &:nth-child(1){
+                                                width: 35%;
+                                            }
+                                            &:nth-child(2){
+                                                width: 30%;
+                                            }
+                                            &:nth-child(3){
+                                                width: 25%;
+                                            }
+                                            &:nth-child(4){
+                                                width: 10%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                tbody{
+                                    tr{
+                                        &:nth-child(odd){
+                                            background-color:$grey;
+                                            td{
+                                                border: 1px solid $white;
+                                            }
+                                            }
+                                    }
+                                }
+                                tr{
+                                    th { 
+                                        background-color: $main_color; 
+                                        color: $white; 
+                                        font-weight: bold; 
+                                        }
+                                        td, th { 
+                                            padding: 10px; 
+                                            border: 1px solid $grey; 
+                                            text-align: center; 
+                                            }
+                                            td{
+                                                &:nth-child(4){
+                                                    text-align: left;
+                                                }
+                                            }
+                                }
+                                }
+
+                                &::-webkit-scrollbar{
+                                    background: transparent;
+                                    height: 8px;
+                                    width: 12px;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    border: none;
+                                    box-shadow: none;
+                                    background: $main_color;
+                                    border-radius: 4px;
+                                    min-height: 40px;
+                                }
+                                &::-webkit-scrollbar-track{
+                                    margin: 3px 0;
+                                }
+                        }
+
+                        
                     }
 
                 }
@@ -144,72 +154,11 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        .title_name {
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            margin: 0px auto 60px;
-
-            .name_area {
-                width: 50%;
-                max-width: calc(100% - 350px);
-
-                .name_area_content {
-                    .chinese_name {
-                        h3 {
-                            font-size: 45px;
-                        }
-                    }
-
-                    .english_name {
-                        span {
-                            font-size: 24px;
-                        }
-                    }
-                }
-
-                .ntnu_name {
-                    margin: 10px 0 0 0px;
-                }
-            }
-
-            .photo_area {
-                margin: 0;
-                width: 50%;
-                max-width: 340px;
-            }
-        }
     }
 }
 
 @media screen and (min-width: 992px) {
     main {
-        .title_name {
-            margin: 0px auto 80px;
-
-            .name_area {
-                max-width: calc(100% - 450px);
-
-                .name_area_content {
-                    .chinese_name {
-                        h3 {
-                            font-size: 65px;
-                        }
-                    }
-
-                    .english_name {
-                        span {
-                            font-size: 30px;
-                        }
-                    }
-                }
-            }
-
-            .photo_area {
-                max-width: 450px;
-            }
-        }
-
         .about_area {
             margin: 20px auto;
 
@@ -241,36 +190,6 @@ main {
 
 @media screen and (min-width: 1200px) {
     main {
-        .title_name {
-            margin: 0px auto 100px;
-            justify-content: center;
-
-            .name_area {
-                max-width: calc(100% - 450px);
-
-                .name_area_content {
-                    .chinese_name {
-                        h3 {
-                            font-size: 65px;
-                        }
-                    }
-
-                    .english_name {
-                        span {
-                            font-size: 30px;
-                        }
-                    }
-                }
-
-                .ntnu_name {
-                    margin: 10px 0 0 65px;
-                }
-            }
-
-            .photo_area {
-                max-width: 550px;
-            }
-        }
 
     }
 }
