@@ -1,5 +1,8 @@
 .slide{
     position: relative;
+    // &.slide_index{
+    //     background-image: url(../image/slide/slide_index.png);
+    // }
     &.slide_laboratory{
         background-image: url(../image/slide/slide_laboratory.png);
     }
@@ -15,6 +18,14 @@
         h1{
             color: $white;
             text-shadow: $black 2px 2px 10px;
+        }
+
+        &.slide_title_index{
+            width: 55%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0;
         }
     }
 }
