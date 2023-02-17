@@ -95,10 +95,17 @@ main {
                                 tbody{
                                     tr{
                                         &:nth-child(odd){
-                                            background-color:$grey;
+                                            background-color:$light_grey;
                                             td{
                                                 border: 1px solid $white;
                                             }
+                                            }
+
+                                            &:hover{
+                                                background-color: lighten($main_color, 25%);
+                                                td{
+                                                    color: $main_color_yellow;
+                                                }
                                             }
                                     }
                                 }
@@ -124,7 +131,7 @@ main {
                                 &::-webkit-scrollbar{
                                     background: transparent;
                                     height: 8px;
-                                    width: 12px;
+                                    width: 8px;
                                 }
                                 &::-webkit-scrollbar-thumb {
                                     border: none;

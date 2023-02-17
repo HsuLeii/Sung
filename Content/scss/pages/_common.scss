@@ -1,42 +1,31 @@
+.slide{
+    position: relative;
+    &.slide_laboratory{
+        background-image: url(../image/slide/slide_laboratory.png);
+    }
+    &.slide_society{
+        background-image: url(../image/slide/slide_society.png);
+    }
+    &.slide_research{
+        background-image: url(../image/slide/slide_research.png);
+    }
+    .slide_title{
+        margin: 0 auto;
+        padding: 50px 10%;
+        h1{
+            color: $white;
+            text-shadow: $black 2px 2px 10px;
+        }
+    }
+}
 main {
     width: 80%;
     max-width: 1200px;
     margin: 40px auto;
     padding: 40px 0;
 
-
-    .category_wrap {
-        padding: 5px 0 10px;
-        margin: 0 auto 20px;
-        border-bottom: 1px solid $grey;
-
-        .category_inner {
-            .category_nav {
-                ul {
-                    display: flex;
-                    justify-content: flex-end;
-
-                    li {
-                        font-size: 10px;
-
-                        a {
-                            font-size: 10px;
-                            color: $black;
-                            padding: 5px 0;
-
-                            &:hover {
-                                border-bottom: 1px solid $main_color;
-                                color: $main_color;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     .title_wrap {
-        margin: 0 0 10px;
+        margin: 0 0 40px;
 
         .title_wrap_subtitle {
             color: $main_color;
@@ -57,9 +46,6 @@ main {
     }
 
     .page_content_wrap {
-        .page_content_subtitle {
-            padding: 10px 0;
-        }
 
         .page_content {
             .page_content_img {
@@ -70,7 +56,7 @@ main {
             }
 
             .page_content_part {
-                margin: 40px auto;
+                margin: 20px auto;
 
                 .page_content_part_title {
                     color: $main_color;
@@ -94,6 +80,7 @@ main {
                 .select_area {
                     display: flex;
                     align-items: center;
+                    margin: 0 0 25px;
 
                     .select_title {
                         margin: 0 10px 0 0;
@@ -177,8 +164,13 @@ main {
                 .page_content_paragraph {
                     .page_content_part_text {
                         display: flex;
-                        margin: 10px 0;
+                        margin: 15px 0 10px;
                         text-indent: 0em;
+
+                        &:nth-child(1){
+                            margin: 0;
+                            padding: 0 0 15px;
+                        }
                     }
 
                     &.filterDivs {
@@ -189,7 +181,7 @@ main {
                 }
 
                 .page_content_part_text {
-                    padding: 15px 0;
+                    padding: 0 0 15px;
                     text-indent: 2em;
 
                     a {
@@ -245,7 +237,7 @@ main {
 
             .both_menu {
                 width: 100%;
-                margin: 20px auto 0;
+                margin: 20px auto 40px;
 
                 ul {
                     display: flex;
@@ -263,7 +255,7 @@ main {
                     }
 
                     .both_menu_link {
-
+                        
                         &:hover,
                         &.active {
                             color: $main_color;
@@ -347,31 +339,14 @@ main {
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
-    main {
-        margin: 80px auto;
-
-        .category_wrap {
-            margin: 0 auto 40px;
-
-            .category_inner {
-                .category_nav {
-                    ul {
-                        li {
-                            font-size: 15px;
-
-                            a {
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-            }
+    .slide{
+        .slide_title{
+            padding: 80px 10%;
         }
+    }
+    main {
 
         .page_content_wrap {
-            .page_content_subtitle {
-                padding: 20px 0;
-            }
 
             .page_content {
                 .page_content_img {
@@ -379,20 +354,31 @@ main {
                 }
 
                 .page_content_part {
+                    margin: 20px auto;
 
                     .page_content_part_title {
                         padding: 0 0 20px;
                         margin: 0 0 20px;
                     }
 
-                    .select_area {    
+                    .select_area {   
+                        margin: 0 0 40px; 
                         .select {
                             width: 230px;
                         }
                     }
 
+                    .page_content_paragraph {
+                        .page_content_part_text {
+                            margin: 20px 0 10px;
+                            &:nth-child(1){
+                                padding: 0 0 20px;
+                            }
+                        }
+                    }
+
                     .page_content_part_text {
-                        padding: 20px 0;
+                        padding: 0 0 20px;
                     }
 
                     .page_content_part_subtitle_content {
@@ -433,12 +419,8 @@ main {
 
 @media screen and (min-width: 1200px) {
     main {
-        margin: 100px auto;
 
         .page_content_wrap {
-            .page_content_subtitle {
-                padding: 20px 0;
-            }
 
             .page_content {
                 .page_content_img {
@@ -446,7 +428,6 @@ main {
                 }
 
                 .page_content_part {
-                    margin: 40px auto;
 
                     .page_content_part_title {
                         padding: 0 0 20px;
@@ -457,10 +438,6 @@ main {
                         .select {
                             width: 250px;
                         }
-                    }
-
-                    .page_content_part_text {
-                        padding: 20px 0;
                     }
 
                     .page_content_part_subtitle_content {
@@ -475,7 +452,7 @@ main {
 
                 .both_menu {
                     width: 20%;
-                    margin: 40px 0 0;
+                    margin: 0;
 
                     ul {
                         position: sticky;
@@ -488,6 +465,25 @@ main {
                             border-bottom: 1px solid $black;
                             padding: 20px 0;
                             margin: 0 0 20px;
+                        }
+
+                        .both_menu_link {
+                            position: relative;
+    
+                            &.active{
+                                &:before {
+                                    position: absolute;
+                                    right: 0%;
+                                    display: inline-block;
+                                    content: '\f061';
+                                    font: var(--fa-font-solid);
+                                    color: $main_color;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    top: 50%;
+                                    transform: translate(calc(100% + 10px), -50%);
+                                }
+                            }
                         }
 
                         li {

@@ -90,11 +90,7 @@ a {
 }
 
 b {
-    color: $main_color;
-
-    &.note {
-        background: linear-gradient(0deg, $main_color_yellow 20%, transparent 20%);
-    }
+    color: $black;
 }
 
 ruby {
