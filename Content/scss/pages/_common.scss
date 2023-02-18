@@ -1,26 +1,31 @@
-.slide{
+.slide {
     position: relative;
+
     // &.slide_index{
     //     background-image: url(../image/slide/slide_index.png);
     // }
-    &.slide_laboratory{
+    &.slide_laboratory {
         background-image: url(../image/slide/slide_laboratory.png);
     }
-    &.slide_society{
+
+    &.slide_society {
         background-image: url(../image/slide/slide_society.png);
     }
-    &.slide_research{
+
+    &.slide_research {
         background-image: url(../image/slide/slide_research.png);
     }
-    .slide_title{
+
+    .slide_title {
         margin: 0 auto;
         padding: 50px 10%;
-        h1{
+
+        h1 {
             color: $white;
             text-shadow: $black 2px 2px 10px;
         }
 
-        &.slide_title_index{
+        &.slide_title_index {
             width: 55%;
             position: absolute;
             left: 0;
@@ -29,6 +34,7 @@
         }
     }
 }
+
 main {
     width: 80%;
     max-width: 1200px;
@@ -178,7 +184,7 @@ main {
                         margin: 15px 0 10px;
                         text-indent: 0em;
 
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             margin: 0;
                             padding: 0 0 15px;
                         }
@@ -266,7 +272,7 @@ main {
                     }
 
                     .both_menu_link {
-                        
+
                         &:hover,
                         &.active {
                             color: $main_color;
@@ -347,54 +353,15 @@ main {
     }
 }
 
-.timeline_area {
-    border-left: 3px solid $main_color;
-    position: relative;
-    
-    .timeline_item {
-      
-      &:last-of-type { 
-        padding-bottom: 0;
-        margin-bottom: 0; 
-        border: none;      
-      }
-      .timeline_year{
-        position: relative;
-        left: 20px;    
-        transform: translate(0% , 0%);
-        margin: 0 0 20px;
-      }
-      .timeline_right{
-        margin: 0 0 20px 20px;
-        .timeline_title{
-            color: $main_color;
-            margin: 0 0 5px;
-          }
-      }
-      
-      &:after {
-        content: "";   
-        position: absolute;
-        top: calc(19px * 1.5 / 2);
-        left: 0;        
-        background-color: $body_bg;
-        border: 1px solid $main_color;    
-        border-radius: 50%;  
-        height: 15px;
-        width: 15px;
-        transform: translate(calc(-50% - 1.5px), -50%);
-      }
-    }
-  }
-
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
-    .slide{
-        .slide_title{
+    .slide {
+        .slide_title {
             padding: 80px 10%;
         }
     }
+
     main {
 
         .page_content_wrap {
@@ -412,8 +379,9 @@ main {
                         margin: 0 0 20px;
                     }
 
-                    .select_area {   
-                        margin: 0 0 40px; 
+                    .select_area {
+                        margin: 0 0 40px;
+
                         .select {
                             width: 230px;
                         }
@@ -422,7 +390,8 @@ main {
                     .page_content_paragraph {
                         .page_content_part_text {
                             margin: 20px 0 10px;
-                            &:nth-child(1){
+
+                            &:nth-child(1) {
                                 padding: 0 0 20px;
                             }
                         }
@@ -485,7 +454,7 @@ main {
                         margin: 0 0 20px;
                     }
 
-                    .select_area {    
+                    .select_area {
                         .select {
                             width: 250px;
                         }
@@ -520,8 +489,8 @@ main {
 
                         .both_menu_link {
                             position: relative;
-    
-                            &.active{
+
+                            &.active {
                                 &:before {
                                     position: absolute;
                                     right: 0%;
