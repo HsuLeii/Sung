@@ -1042,6 +1042,46 @@ main .scroll_top:hover .scroll_top_border {
   stroke-dashoffset: 0;
 }
 
+.timeline_area {
+  border-left: 3px solid #007ECA;
+  position: relative;
+}
+
+.timeline_area .timeline_item:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline_area .timeline_item .timeline_year {
+  position: relative;
+  left: 20px;
+  transform: translate(0%, 0%);
+  margin: 0 0 20px;
+}
+
+.timeline_area .timeline_item .timeline_right {
+  margin: 0 0 20px 20px;
+}
+
+.timeline_area .timeline_item .timeline_right .timeline_title {
+  color: #007ECA;
+  margin: 0 0 5px;
+}
+
+.timeline_area .timeline_item:after {
+  content: "";
+  position: absolute;
+  top: calc(19px * 1.5 / 2);
+  left: 0;
+  background-color: #f0f2f2;
+  border: 1px solid #007ECA;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  transform: translate(calc(-50% - 1.5px), -50%);
+}
+
 @media screen and (min-width: 768px) {
   .slide .slide_title {
     padding: 80px 10%;

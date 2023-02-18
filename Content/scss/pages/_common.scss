@@ -347,6 +347,46 @@ main {
     }
 }
 
+.timeline_area {
+    border-left: 3px solid $main_color;
+    position: relative;
+    
+    .timeline_item {
+      
+      &:last-of-type { 
+        padding-bottom: 0;
+        margin-bottom: 0; 
+        border: none;      
+      }
+      .timeline_year{
+        position: relative;
+        left: 20px;    
+        transform: translate(0% , 0%);
+        margin: 0 0 20px;
+      }
+      .timeline_right{
+        margin: 0 0 20px 20px;
+        .timeline_title{
+            color: $main_color;
+            margin: 0 0 5px;
+          }
+      }
+      
+      &:after {
+        content: "";   
+        position: absolute;
+        top: calc(19px * 1.5 / 2);
+        left: 0;        
+        background-color: $body_bg;
+        border: 1px solid $main_color;    
+        border-radius: 50%;  
+        height: 15px;
+        width: 15px;
+        transform: translate(calc(-50% - 1.5px), -50%);
+      }
+    }
+  }
+
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
