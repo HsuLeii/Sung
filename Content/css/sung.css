@@ -970,10 +970,6 @@ main .page_content_wrap.page_content_wrap_both .both_menu ul .both_menu_title {
   margin: 0 0 10px;
 }
 
-main .page_content_wrap.page_content_wrap_both .both_menu ul .both_menu_title h4 {
-  color: #007ECA;
-}
-
 main .page_content_wrap.page_content_wrap_both .both_menu ul .both_menu_link:hover, main .page_content_wrap.page_content_wrap_both .both_menu ul .both_menu_link.active {
   color: #007ECA;
 }
