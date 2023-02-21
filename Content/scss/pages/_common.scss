@@ -76,10 +76,9 @@ main {
                 margin: 20px auto;
 
                 .page_content_part_title {
-                    color: $main_color;
                     padding: 0 0 10px;
                     margin: 0 0 10px;
-                    border-bottom: 1px solid $main_color;
+                    border-bottom: 1px solid $black;
 
                     a {
                         color: $main_color;
@@ -204,6 +203,7 @@ main {
                     a {
                         color: $main_color;
                         background: linear-gradient($main_color_yellow, $main_color_yellow) 0 100%/0 100% no-repeat;
+                        border-bottom: 1px solid $main_color;
 
                         &:hover {
                             background-size: 100% 100%;

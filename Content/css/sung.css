@@ -793,10 +793,9 @@ main .page_content_wrap .page_content .page_content_part {
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_title {
-  color: #007ECA;
   padding: 0 0 10px;
   margin: 0 0 10px;
-  border-bottom: 1px solid #007ECA;
+  border-bottom: 1px solid #2f2f2f;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_title a {
@@ -913,6 +912,7 @@ main .page_content_wrap .page_content .page_content_part .page_content_part_text
 main .page_content_wrap .page_content .page_content_part .page_content_part_text a {
   color: #007ECA;
   background: linear-gradient(#ffe503, #ffe503) 0 100%/0 100% no-repeat;
+  border-bottom: 1px solid #007ECA;
 }
 
 main .page_content_wrap .page_content .page_content_part .page_content_part_text a:hover {
