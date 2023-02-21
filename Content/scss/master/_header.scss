@@ -273,6 +273,7 @@ header {
         border-bottom: 1.5px solid $main_color;
         box-shadow: 2px 9px 46px 0px $box_shadow_color;
         position: fixed;
+        z-index: 2;
     }
 }
 
