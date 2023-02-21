@@ -259,32 +259,39 @@ main {
                 ul {
                     display: flex;
                     flex-wrap: wrap;
+                    flex-direction: column;
 
-                    .both_menu_title {
-                        width: 100%;
-                        border-bottom: 1px solid $black;
-                        padding: 10px 0;
-                        margin: 0 0 10px;
-                    }
+                    .both_menu_item{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 15px 0;
 
-                    .both_menu_link {
-
-                        &:hover,
-                        &.active {
-                            color: $main_color;
+                        .both_menu_title {
+                            width: 100%;
+                            border-bottom: 1px solid $black;
+                            padding: 10px 0;
+                            margin: 0 0 10px;
+                        }
+    
+                        .both_menu_link {
+    
+                            &:hover,
+                            &.active {
+                                color: $main_color;
+                            }
+                        }
+    
+                        li {
+                            border-right: 1px solid;
+                            padding: 0 10px;
+    
+                            &:nth-last-child(1) {
+                                border-right: 0px;
+                                padding: 0 0 0 10px;
+                            }
                         }
                     }
-
-                    li {
-                        border-left: 1px solid;
-                        padding: 0 10px;
-
-                        &:nth-child(2) {
-                            border-left: 0px;
-                            padding: 0 10px 0 0;
-                        }
-                    }
-
+                    
                 }
             }
         }
@@ -473,44 +480,46 @@ main {
                     ul {
                         position: sticky;
                         top: 120px;
-                        flex-direction: column;
 
-                        .both_menu_title {
-                            width: 100%;
-                            color: $main_color;
-                            border-bottom: 1px solid $black;
-                            padding: 20px 0;
-                            margin: 0 0 20px;
-                        }
-
-                        .both_menu_link {
-                            position: relative;
-
-                            &.active {
-                                &:before {
-                                    position: absolute;
-                                    right: 0%;
-                                    display: inline-block;
-                                    content: '\f061';
-                                    font: var(--fa-font-solid);
-                                    color: $main_color;
-                                    opacity: 1;
-                                    visibility: visible;
-                                    top: 50%;
-                                    transform: translate(calc(100% + 10px), -50%);
+                        .both_menu_item{
+                            .both_menu_title {
+                                color: $main_color;
+                                padding: 20px 0;
+                                margin: 0 0 20px;
+                            }
+    
+                            .both_menu_link {
+                                position: relative;
+    
+                                &.active {
+                                    &:before {
+                                        position: absolute;
+                                        right: 0%;
+                                        display: inline-block;
+                                        content: '\f061';
+                                        font: var(--fa-font-solid);
+                                        color: $main_color;
+                                        opacity: 1;
+                                        visibility: visible;
+                                        top: 50%;
+                                        transform: translate(calc(100% + 10px), -50%);
+                                    }
+                                }
+                            }
+    
+                            li {
+                                border-right: 0px solid;
+                                padding: 0;
+                                margin: 5px 0;
+                                width: 100%;
+    
+                                &:nth-last-child(1) {
+                                    padding: 0;
                                 }
                             }
                         }
 
-                        li {
-                            border-left: 0px solid;
-                            padding: 0;
-                            margin: 5px 0;
-
-                            &:nth-child(2) {
-                                padding: 0;
-                            }
-                        }
+                        
 
                     }
                 }
