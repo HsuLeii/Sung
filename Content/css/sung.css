@@ -1222,9 +1222,11 @@ main .scroll_top:hover .scroll_top_border {
 @media screen and (min-width: 1200px) {
   .slide.slide_index {
     justify-content: center;
+    background: linear-gradient(70deg, #ffffff 65%, #5167b0 0%);
   }
   .slide.slide_index .slide_title_index {
     width: auto;
+    padding: 0 80px 20px;
   }
   .slide.slide_index .slide_ntnu {
     left: calc(50% + 330px);
@@ -1293,6 +1295,12 @@ main .scroll_top:hover .scroll_top_border {
 }
 
 @media screen and (min-width: 1400px) {
+  .slide.slide_index {
+    background: linear-gradient(70deg, #ffffff 60%, #5167b0 0%);
+  }
+  .slide.slide_index .slide_ntnu {
+    left: calc(50% + 390px);
+  }
   main .page_content_part_marker::after {
     top: calc(20px * 0.85);
   }

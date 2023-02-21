@@ -80,14 +80,6 @@
             color: $white;
             text-shadow: $black 2px 2px 10px;
         }
-
-        // &.slide_title_index {
-        //     width: 55%;
-        //     position: absolute;
-        //     left: 0;
-        //     top: 0;
-        //     padding: 0;
-        // }
     }
 
     
@@ -616,9 +608,11 @@ main {
 
         &.slide_index{
             justify-content: center;
+            background: linear-gradient(70deg, #ffffff 65%, #5167b0 0%);
     
             .slide_title_index {
                 width: auto;
+                padding: 0 80px 20px;
             }
 
             .slide_ntnu{
@@ -729,6 +723,18 @@ main {
 
 
 @media screen and (min-width: 1400px) {
+
+    .slide {
+
+        &.slide_index{
+            background: linear-gradient(70deg, #ffffff 60%, #5167b0 0%);
+
+            .slide_ntnu{
+                left: calc(50% + 390px);
+            }
+        }
+    }
+
     main {
         .page_content_part_marker {
 
