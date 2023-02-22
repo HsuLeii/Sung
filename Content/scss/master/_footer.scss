@@ -1,19 +1,14 @@
 footer{
     background-color: $black;
-    padding: 40px 10%;
+    padding: 20px 10%;
     .footer_area{
-        .footer_logo{
-            width: 40%;
-            max-width: 350px;
-        }
         .footer_information{
-            margin: 20px 0 0;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
             .footer_copyright_text{
                 color: $copyright_color;
-                margin: 10px 0;
+                font-size: 13px;
             }
         }
     }
@@ -130,18 +125,6 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px){
-    footer{
-        .footer_area{
-            .footer_information{
-                margin: 40px 0 0;
-                .footer_copyright_text{
-                    margin: 20px 0;
-                }
-            }
-        }
-    }
-}
 
 @media screen and (min-width: 992px){
     footer{
