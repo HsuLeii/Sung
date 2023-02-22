@@ -719,7 +719,16 @@ footer .contact_area {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  border: 1px solid #007ECA;
   cursor: pointer;
+}
+
+footer .contact_area:hover {
+  background-color: #007ECA;
+}
+
+footer .contact_area:hover .contact_area_btn p {
+  color: #fff;
 }
 
 footer .fa-xmark {
@@ -756,6 +765,10 @@ footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_it
 footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content .modal_contact_item_content_item {
   display: flex;
   flex-wrap: wrap;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content .modal_contact_item_content_item .modal_contact_item_content_link:nth-child(1) {
+  margin: 0 20px 0px 0;
 }
 
 footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content a {
@@ -807,11 +820,17 @@ footer .scroll_top:hover .scroll_top_border {
 }
 
 @media screen and (min-width: 992px) {
-  footer .scroll_top {
-    width: 50px;
-    right: 5%;
-    bottom: 50px;
-    transform: translate(50%, 0px);
+  footer .contact_area {
+    right: 2%;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  footer .contact_area {
+    width: 90px;
+    height: 90px;
   }
 }
 
@@ -1179,8 +1198,9 @@ main .page_content_part_marker_text {
 
 main .scroll_top {
   position: fixed;
-  right: 1%;
-  bottom: 30px;
+  right: calc(1% + 30px);
+  transform: translate(50%, 0%);
+  bottom: 100px;
   max-width: 50px;
   width: 8%;
   cursor: pointer;
@@ -1313,9 +1333,8 @@ main .scroll_top:hover .scroll_top_border {
   }
   main .scroll_top {
     width: 50px;
-    right: 5%;
-    bottom: 50px;
-    transform: translate(50%, 0px);
+    right: calc(2% + 40px);
+    bottom: 120px;
   }
 }
 
@@ -1422,6 +1441,10 @@ main .scroll_top:hover .scroll_top_border {
   }
   main .page_content_part_marker::after {
     top: calc(20px * 0.85);
+  }
+  main .scroll_top {
+    right: calc(2% + 45px);
+    bottom: 130px;
   }
 }
 

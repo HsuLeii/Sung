@@ -394,8 +394,9 @@ main {
 
     .scroll_top {
         position: fixed;
-        right: 1%;
-        bottom: 30px;
+        right: calc(1% + 30px);
+        transform: translate(50%, 0%);
+        bottom: 100px;
         max-width: 50px;
         width: 8%;
         cursor: pointer;
@@ -621,9 +622,8 @@ main {
 
         .scroll_top {
             width: 50px;
-            right: 5%;
-            bottom: 50px;
-            transform: translate(50%, 0px);
+            right: calc(2% + 40px);
+            bottom: 120px;
         }
     }
 }
@@ -804,6 +804,11 @@ main {
             &::after {
                 top: calc(20px * 0.85);
             }
+        }
+
+        .scroll_top {
+            right: calc(2% + 45px);
+            bottom: 130px;
         }
     }
 }

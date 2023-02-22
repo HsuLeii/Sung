@@ -29,7 +29,17 @@ footer{
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        border: 1px solid $main_color;
         cursor: pointer;
+
+        &:hover{
+            background-color: $main_color;
+            .contact_area_btn{
+                p{
+                    color: $white;
+                }
+            }
+        }
     }
     .fa-xmark {
         font-size: 40px;
@@ -64,6 +74,12 @@ footer{
                             .modal_contact_item_content_item{
                                 display: flex;
                                 flex-wrap: wrap;
+
+                                .modal_contact_item_content_link{
+                                    &:nth-child(1){
+                                        margin: 0 20px 0px 0;
+                                    }
+                                }
                             }
 
                             a{
@@ -129,11 +145,19 @@ footer{
 
 @media screen and (min-width: 992px){
     footer{
-        .scroll_top {
-            width: 50px;
-            right: 5%;
-            bottom: 50px;
-            transform: translate(50%, 0px);
+        .contact_area{
+            right: 2%;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px){
+    footer{
+        .contact_area{
+            width: 90px;
+            height: 90px;
         }
     }
 }
