@@ -736,7 +736,7 @@ footer .footer_area .footer_information .footer_copyright_text {
 }
 
 .slide.slide_index {
-  background: linear-gradient(90deg, #fff 60%, #5167b0 0%);
+  background: linear-gradient(90deg, #fff 60%, #5a6afe 0%);
   overflow: hidden;
 }
 
@@ -748,7 +748,7 @@ footer .footer_area .footer_information .footer_copyright_text {
   max-width: 1200px;
   position: relative;
   margin: 0 auto;
-  background: linear-gradient(70deg, #fff 60%, #5167b0 0%);
+  background: linear-gradient(70deg, #fff 60%, #5a6afe 0%);
 }
 
 .slide.slide_index .slide_index_area .slide_title_index {
