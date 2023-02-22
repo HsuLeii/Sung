@@ -1314,6 +1314,9 @@ main .scroll_top:hover .scroll_top_border {
 }
 
 @media screen and (min-width: 1400px) {
+  .slide.slide_index .slide_index_area .slide_title_index .slide_name p {
+    font-size: 35px;
+  }
   .slide.slide_index .slide_index_area .slide_figure {
     width: 350px;
   }
