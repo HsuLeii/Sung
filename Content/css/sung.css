@@ -768,6 +768,7 @@ footer .footer_area .footer_information .footer_copyright_text {
 
 .slide.slide_index .slide_index_area .slide_title_index .slide_name p {
   color: #007ECA;
+  font-weight: bold;
 }
 
 .slide.slide_index .slide_index_area .slide_title_index .slide_information .slide_information_text {
@@ -1143,6 +1144,9 @@ main .scroll_top:hover .scroll_top_border {
   .slide.slide_index .slide_index_area .slide_title_index .slide_name h3 {
     margin: 0 10px 0 0;
   }
+  .slide.slide_index .slide_index_area .slide_title_index .slide_name p {
+    font-size: 20px;
+  }
   .slide.slide_index .slide_index_area .slide_title_index .slide_information .slide_information_text p {
     padding: 0 0 0 10px;
   }
@@ -1161,6 +1165,9 @@ main .scroll_top:hover .scroll_top_border {
   }
   .slide.slide_index .slide_index_area .slide_title_index .slide_name h3 {
     font-size: 50px;
+  }
+  .slide.slide_index .slide_index_area .slide_title_index .slide_name p {
+    font-size: 25px;
   }
   .slide.slide_index .slide_index_area .slide_title_index .slide_information .slide_information_text p {
     padding: 0 0 0 15px;
@@ -1226,6 +1233,12 @@ main .scroll_top:hover .scroll_top_border {
   .slide.slide_index .slide_index_area .slide_title_index {
     width: auto;
     padding: 0 80px 20px 0;
+  }
+  .slide.slide_index .slide_index_area .slide_title_index .slide_name h3 {
+    font-size: 60px;
+  }
+  .slide.slide_index .slide_index_area .slide_title_index .slide_name p {
+    font-size: 30px;
   }
   .slide.slide_index .slide_index_area .slide_figure {
     position: relative;

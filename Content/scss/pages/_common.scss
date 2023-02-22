@@ -45,6 +45,7 @@
 
                     p{
                         color: $main_color;
+                        font-weight: bold;
                     }
                 }
                 .slide_information{
@@ -472,6 +473,10 @@ main {
                         h3{
                             margin: 0 10px 0 0;
                         }
+
+                        p{
+                            font-size: 20px;
+                        }
                     }
                     .slide_information{
                         .slide_information_text{
@@ -509,6 +514,10 @@ main {
                     .slide_name{
                         h3{
                             font-size: 50px;
+                        }
+
+                        p{
+                            font-size: 25px;
                         }
                     }
                     .slide_information{
@@ -631,6 +640,15 @@ main {
                 .slide_title_index {
                     width: auto;
                     padding: 0 80px 20px 0;
+
+                    .slide_name{
+                        h3{
+                            font-size: 60px;
+                        }
+                        p{
+                            font-size: 30px;
+                        }
+                    }
                 }
 
                 .slide_figure{
