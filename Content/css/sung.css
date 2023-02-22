@@ -27,6 +27,7 @@ input,
 textarea,
 p,
 a,
+button,
 blockquote,
 th,
 td,
@@ -702,37 +703,115 @@ footer .footer_area .footer_information {
   flex-wrap: wrap;
 }
 
-footer .footer_area .footer_information .footer_information_text {
-  color: #fff;
-  margin: 10px 10px 10px 0;
-}
-
-footer .footer_area .footer_information .footer_information_text a {
-  color: #fff;
-}
-
-footer .footer_area .footer_information .footer_information_text a:hover {
-  color: #ffe503;
-}
-
 footer .footer_area .footer_information .footer_copyright_text {
   color: #999;
   margin: 10px 0;
+}
+
+footer .contact_area {
+  position: fixed;
+  right: 1%;
+  bottom: 30px;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 footer .fa-xmark {
   font-size: 40px;
 }
 
+footer .modal_contact .modal-dialog .modal-content .modal-header {
+  padding: 10px 20px;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body {
+  padding: 10px 20px;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px dotted #2f2f2f;
+  padding: 10px 0;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_title p {
+  word-break: keep-all;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content {
+  border: 0px;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content .modal_contact_item_content_item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content a {
+  color: #007ECA;
+  border-bottom: 1px solid #007ECA;
+  background: linear-gradient(#ffe503, #ffe503) 0 100%/0 100% no-repeat;
+}
+
+footer .modal_contact .modal-dialog .modal-content .modal-body .modal_contact_item .modal_contact_item_content a:hover {
+  background-size: 100% 100%;
+  transition: background-size 0.45s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+  color: #005e97;
+}
+
+footer .scroll_top {
+  position: fixed;
+  right: 1%;
+  bottom: 60px;
+  max-width: 50px;
+  width: 8%;
+  cursor: pointer;
+}
+
+footer .scroll_top .scroll_top_arrow {
+  fill: #007ECA;
+  position: absolute;
+}
+
+footer .scroll_top .scroll_top_border {
+  stroke: #007ECA;
+  fill: none;
+  stroke-width: 1px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: 0.8s;
+}
+
+footer .scroll_top:hover .scroll_top_border {
+  stroke-dashoffset: 0;
+}
+
 @media screen and (min-width: 768px) {
   footer .footer_area .footer_information {
     margin: 40px 0 0;
   }
-  footer .footer_area .footer_information .footer_information_text {
-    margin: 20px 20px 20px 0;
-  }
   footer .footer_area .footer_information .footer_copyright_text {
     margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .scroll_top {
+    width: 50px;
+    right: 5%;
+    bottom: 50px;
+    transform: translate(50%, 0px);
   }
 }
 

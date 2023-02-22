@@ -3,37 +3,59 @@
         <img src="Content/image/logo/logo_ntnu_white.svg" alt="">
     </div>
     <div class="footer_information">
-        <p class="footer_information_text"><a href="tel:+886-2-33433128">TEL：(02)3343-3128</a> / <a href="tel:+886-2-77493769">TEL：(02)7749-3769</a> / <a href="mailto:sungtc@ntnu.edu.tw">sungtc@ntnu.edu.tw</a></p>
         <p class="footer_copyright_text">© All Rights Reserved. 國立臺灣師範大學教育心理與輔導學系</p>
     </div>
 </div>
 
-
-
-<a href="#AddCardModal" class="card_button card_button_main_color card_main_button_item card_main_button_item_new" data-bs-toggle="modal">
-    <p class="svg_icon">
-      <i class="fa-solid fa-plus"></i>
-    </p>
-    <p>新增卡片</p>
-  </a>
-
-      <!-- Modal -->
-<div class="modal fade" id="AddCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h4 class="modal-title">聯絡方式</h4>
-      <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
-    <div class="modal-body">
-      ...
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
-  </div>
+<div class="contact_area">
+    <a href="#contactModal" class="card_button card_button_main_color card_main_button_item card_main_button_item_new"
+        data-bs-toggle="modal">
+        <p>聯絡<br />方式</p>
+    </a>
 </div>
+
+<!-- Modal -->
+<div class="modal fade modal_contact" id="contactModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">聯絡方式</h3>
+                <button type="button" class="btn_close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_contact_item">
+                    <div class="modal_contact_item_title">
+                        <p>姓名：</p>
+                    </div>
+                    <div class="modal_contact_item_content">
+                        <p>宋曜廷</p>
+                    </div>
+                </div>
+
+                <div class="modal_contact_item">
+                    <div class="modal_contact_item_title">
+                        <p>辦公室電話：</p>
+                    </div>
+                    <div class="modal_contact_item_content">
+                        <p class="modal_contact_item_content_item">
+                            <a href="tel:+886-2-33433128">(02)3343-3128</a> ;
+                            <a href="tel:+886-2-77493769">(02)7749-3769</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal_contact_item">
+                    <div class="modal_contact_item_title">
+                        <p>E-mail：</p>
+                    </div>
+                    <div class="modal_contact_item_content">
+                        <a href="mailto:sungtc@ntnu.edu.tw">sungtc@ntnu.edu.tw</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
