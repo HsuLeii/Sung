@@ -124,6 +124,7 @@ img {
 }
 
 button {
+  font-size: 14px;
   padding: 0;
   border-width: 0px;
   border-style: none;
@@ -202,6 +203,9 @@ body {
   label {
     font-size: 15px;
   }
+  button {
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -239,6 +243,9 @@ body {
   label {
     font-size: 17px;
   }
+  button {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -262,6 +269,9 @@ body {
   }
   input,
   label {
+    font-size: 19px;
+  }
+  button {
     font-size: 19px;
   }
 }
@@ -299,6 +309,9 @@ body {
   }
   input,
   label {
+    font-size: 20px;
+  }
+  button {
     font-size: 20px;
   }
 }
@@ -705,6 +718,10 @@ footer .footer_area .footer_information .footer_information_text a:hover {
 footer .footer_area .footer_information .footer_copyright_text {
   color: #999;
   margin: 10px 0;
+}
+
+footer .fa-xmark {
+  font-size: 40px;
 }
 
 @media screen and (min-width: 768px) {

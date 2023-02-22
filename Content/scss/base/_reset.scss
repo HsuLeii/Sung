@@ -118,6 +118,7 @@ img {
 }
 
 button {
+    font-size: 14px;
     padding: 0;
     border-width: 0px;
     border-style: none;
@@ -206,6 +207,10 @@ body {
     label {
         font-size: 15px;
     }
+
+    button {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -251,6 +256,10 @@ body {
     label {
         font-size: 17px;
     }
+
+    button {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -279,6 +288,10 @@ body {
 
     input,
     label {
+        font-size: 19px;
+    }
+
+    button {
         font-size: 19px;
     }
 }
@@ -324,6 +337,10 @@ body {
 
     input,
     label {
+        font-size: 20px;
+    }
+
+    button {
         font-size: 20px;
     }
 }
