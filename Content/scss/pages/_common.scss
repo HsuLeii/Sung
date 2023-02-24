@@ -1,20 +1,17 @@
 .slide {
     position: relative;
 
-    // &.slide_index{
-    //     background-image: url(../image/slide/slide_index.png);
+    // &.slide_laboratory {
+    //     background-image: url(../image/slide/slide_laboratory.png);
     // }
-    &.slide_laboratory {
-        background-image: url(../image/slide/slide_laboratory.png);
-    }
 
-    &.slide_society {
-        background-image: url(../image/slide/slide_society.png);
-    }
+    // &.slide_society {
+    //     background-image: url(../image/slide/slide_society.png);
+    // }
 
-    &.slide_research {
-        background-image: url(../image/slide/slide_research.png);
-    }
+    // &.slide_research {
+    //     background-image: url(../image/slide/slide_research.png);
+    // }
 
     &.slide_index{
         background: linear-gradient(90deg, $white 60%, #5a6afe 0%);
@@ -390,6 +387,7 @@ main {
 
     .page_content_part_marker_text {
         width: calc(100% - 7px - 15px);
+        word-wrap: break-word;
     }
 
     .scroll_top {

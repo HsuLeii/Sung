@@ -823,18 +823,6 @@ footer .scroll_top:hover .scroll_top_border {
   position: relative;
 }
 
-.slide.slide_laboratory {
-  background-image: url(../image/slide/slide_laboratory.png);
-}
-
-.slide.slide_society {
-  background-image: url(../image/slide/slide_society.png);
-}
-
-.slide.slide_research {
-  background-image: url(../image/slide/slide_research.png);
-}
-
 .slide.slide_index {
   background: linear-gradient(90deg, #fff 60%, #5a6afe 0%);
   overflow: hidden;
@@ -1179,6 +1167,7 @@ main .page_content_part_marker.border_marker::after {
 
 main .page_content_part_marker_text {
   width: calc(100% - 7px - 15px);
+  word-wrap: break-word;
 }
 
 main .scroll_top {
